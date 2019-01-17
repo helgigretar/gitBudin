@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<link href="~/MyCss/frontpage.css" rel="stylesheet" type="text/css"/>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Axelsbúð", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropbtn">Reiðhjól</a>
+                        <div class="dropdown-content">
+                            <div>@Html.ActionLink("karlmannshjól", "", "karlahjol")</div>
+                            <div>@Html.ActionLink("kvennmanshjól", "", "kvennahjol")</div>
+                            <div>@Html.ActionLink("barnahjól", "", "barnahjol")</div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropbtn">auka/varahlutir </a>
+                        <div class="dropdown-content">
+                            <div>@Html.ActionLink("bremsur og gírar", "", "Home")</div>
+                            <div>@Html.ActionLink("keðjur/keðjuhlífar", "", "Home")</div>
+                            <div>@Html.ActionLink("sveifar", "", "Home")</div>
+                            <div>@Html.ActionLink("tannhjól", "", "Home")</div>
+                            <div>@Html.ActionLink("gjarðir", "", "Home")</div>
+                            <div>@Html.ActionLink("slöngur", "", "Home")</div>
+                            <div>@Html.ActionLink("dekk", "", "Home")</div>
+                            <div>@Html.ActionLink("ýmislegt", "", "Home")</div>                            
+                        </div>
+                    </li>
+                    <li>@Html.ActionLink("Hjólastandar", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Kertastjakar", "", "kertastjakar")</li>
+                    <li>@Html.ActionLink("um Axelsbúð", "", "umAxelsbud")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+        <br />
+        <br />
+        <div class="row" id="rows">
+            <!-- Fyrsta myndin Þetta er flipi á reiðhjólasíðuna-->
+            <div class="col-md-4">
+                <div class="footercolumn">
+                    <p>Merkigerði 2</p>
+                    <p>300 Akranes</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footercolumn">
+                    <p>Sími: 431-531</p>
+                    <p>Farsími: 896199</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footercolumn">
+                    <p>AxelG@simnet.is</p>
+                </div>
+            </div>
+        </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

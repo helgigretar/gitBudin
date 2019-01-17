@@ -1,0 +1,36 @@
+﻿.voruHaus{
+    display:flex;
+    justify-content:center;
+    font-size:3rem;
+}
+#row1{
+    background-color:red;
+}
+.dropDownListiVoruContainer {
+    width: 40%;
+    margin-top: 20%;
+}
+@media (max-width: 992px) {
+    .unorderdListVoruContainer {
+        list-style-type: none;
+        font-size: 2.5rem;
+        color: black;
+        display:none;
+    }
+}
+/*Footer í Full view*/
+@media (min-width:991px) {
+    .unorderdListVoruContainer {
+        list-style-type: none;
+        font-size: 2.5rem;
+        color: black;
+    }
+}
+
+
+
+
+
+a{
+    color:black;
+}

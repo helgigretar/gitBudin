@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "karlaHjol";
+}
+<link href="~/MyCss/hjolin.css" rel="stylesheet" type="text/css" />
+<link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
+<html>
+<body>
+    <div class="row" id="row1">
+    </div>
+    <!-- Fyrsta myndin Þetta er flipi á reiðhjólasíðuna-->
+    <div class="col-md-4">
+        <div class="dropDownListiVoruContainer">
+            <ul class="unorderdListVoruContainer">
+                <li>@Html.ActionLink("karlmannshjól", "", "karlahjol")</li>
+                <li>@Html.ActionLink("kvennmanshjól", "", "kvennahjol")</li>
+                <li>@Html.ActionLink("barnahjól", "", "barnahjol")</li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="voruContainer">
+            <p class="voruFyrirsogn">um Axelsbúð</p>
+            <img src="~/images/reidhjol/hjolForsida.png" width="300" height="200" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="voruContainer">
+            <p class="voruFyrirsogn">um Axelsbúð</p>
+            <img src="~/images/reidhjol/hjolForsida.png" width="300" height="200" />
+        </div>
+    </div>
+</body>
+</html>
+
