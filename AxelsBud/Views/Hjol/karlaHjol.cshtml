@@ -6,31 +6,65 @@
 <link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
 <html>
 <body>
-    <div class="row" id="row1">
-    </div>
     <!-- Fyrsta myndin Þetta er flipi á reiðhjólasíðuna-->
-    <div class="col-md-4">
-        <div class="dropDownListiVoruContainer">
-            <ul class="unorderdListVoruContainer">
-                <li>@Html.ActionLink("karlmannshjól", "", "karlahjol")</li>
-                <li>@Html.ActionLink("kvennmanshjól", "", "kvennahjol")</li>
-                <li>@Html.ActionLink("barnahjól", "", "barnahjol")</li>
+    <div class="container" style="display:flex;">
+        <div class="voruListarnir">
+            <div target="voruListi">
+                <div class="dropDownListiVoruContainer">
+                    <ul class="unorderdListVoruContainer">
+                        <div class="vorurhaus">Reiðhjól</div>
+                        <li class="voruLinkur">@Html.ActionLink("barnahjól", "", "barnahjol")</li>
+                        <li class="voruLinkur_valinn">@Html.ActionLink("karlmannshjól", "", "karlahjol")</li>
+                        <li class="voruLinkur">@Html.ActionLink("kvenmanshjól", "", "kvennahjol")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="vorurnar">
+            <div class="col-md-4" target="vara">
+                <div class="voruContainer">
+                    <p class="voruFyrirsogn">Trek 3700</p>
+                    <img src="~/images/reidhjol/hjolForsida.png" width="200" height="200" />
+                    <p class="price">verð 17.500</p>
+                </div>
+            </div>
+            <div class="col-md-4" target="vara">
+                <div class="voruContainer">
+                    <p class="voruFyrirsogn">Marvin 8</p>
+                    <img src="~/images/reidhjol/hjolForsida.png" width="200" height="200" />
+                    <p class="price">verð 17.500</p>
+                </div>
+            </div>
+            <div class="col-md-4" target="vara">
+                <div class="voruContainer">
+                    <p class="voruFyrirsogn">Trek 4200</p>
+                    <img src="~/images/reidhjol/hjolForsida.png" width="200" height="200" />
+                    <p class="price">verð 17.500</p>
+                </div>
+            </div>
+            <div class="col-md-4" target="vara">
+                <div class="voruContainer">
+                    <p class="voruFyrirsogn">Trek 3700</p>
+                    <img src="~/images/reidhjol/hjolForsida.png" width="200" height="200" />
+                </div>
+            </div>
+            <div class="col-md-4" target="vara">
+                <div class="voruContainer">
+                    <p class="voruFyrirsogn">Marvin 8</p>
+                    <img src="~/images/reidhjol/hjolForsida.png" width="200" height="200" />
+                </div>
+            </div>
+            <div class="col-md-4" target="vara">
+                <div class="voruContainer">
+                    <p class="voruFyrirsogn">Trek 4200</p>
+                    <img src="~/images/reidhjol/hjolForsida.png" width="200" height="200" />
+                </div>
+            </div>
+        </div>
+    </div>
 
-            </ul>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="voruContainer">
-            <p class="voruFyrirsogn">um Axelsbúð</p>
-            <img src="~/images/reidhjol/hjolForsida.png" width="300" height="200" />
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="voruContainer">
-            <p class="voruFyrirsogn">um Axelsbúð</p>
-            <img src="~/images/reidhjol/hjolForsida.png" width="300" height="200" />
-        </div>
-    </div>
+
+
 </body>
 </html>
 

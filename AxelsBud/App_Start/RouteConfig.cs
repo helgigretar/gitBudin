@@ -33,6 +33,15 @@ namespace AxelsBud
            "umAxelsbud",
            new { controller = "sagan", action = "um" });
             routes.MapRoute(
+          "auka og varahlutir bjölur",
+          "bjollur",
+          new { controller = "auka_varahlutir", action = "bjollur" });
+         routes.MapRoute(
+         "Vara ? nafn á vöru",
+         "vorur",
+         new { controller = "vorur", action = "vorur" });
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

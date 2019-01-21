@@ -1592,14 +1592,14 @@ pre code {
     width: 750px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1110px) {
   .container {
-    width: 970px;
+    width: 9990px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 .container-fluid {
@@ -1932,7 +1932,8 @@ pre code {
     margin-left: 0;
   }
 }
-@media (min-width: 992px) {
+/* ég breytti þessum úr 992 í 701*/
+@media (min-width: 701px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }

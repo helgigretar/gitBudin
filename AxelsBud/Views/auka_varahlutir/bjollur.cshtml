@@ -1,0 +1,73 @@
+﻿@model AxelsBud.Models.bjollur
+@{
+    ViewBag.Title = "Bjöllur";
+}
+<link href="~/MyCss/hjolin.css" rel="stylesheet" type="text/css" />
+<link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
+<html>
+<body>
+    <!-- Fyrsta myndin Þetta er flipi á reiðhjólasíðuna-->
+    <div class="container" style="display:flex;">
+        <div class="voruListarnir">
+            <div target="voruListi">
+                <div class="dropDownListiVoruContainer">
+                    <ul class="unorderdListVoruContainer">
+                        <div class="vorurhaus">auka og varahlutir</div>
+                        <li class="voruLinkur_valinn">@Html.ActionLink("bjöllur", "", "barnahjol")</li>
+                        <li class="voruLinkur">@Html.ActionLink("bremsur og gírar", "", "karlahjol")</li>
+                        <li class="voruLinkur">@Html.ActionLink("keðjur/keðjuhlífar", "", "kvennahjol")</li>
+                        <li class="voruLinkur">@Html.ActionLink("sveifar", "", "kvennahjol")</li>
+                        <li class="voruLinkur">@Html.ActionLink("tannhjól", "", "kvennahjol")</li>
+                        <li class="voruLinkur">@Html.ActionLink("gjarðir", "", "kvennahjol")</li>
+                        <li class="voruLinkur">@Html.ActionLink("slöngur", "", "kvennahjol")</li>
+                        <li class="voruLinkur">@Html.ActionLink("dekk", "", "kvennahjol")</li>
+                        <li class="voruLinkur">@Html.ActionLink("ýmislegt", "", "kvennahjol")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="vorurnar">
+            <div class="col-md-4" target="vara">
+                <a href="/vorur?Decibell">
+                    <div class="voruContainer">
+                        <p class="voruFyrirsogn">@Model.nofn[0]</p>
+                        <img src="~/images/bjollur/@(Model.myndir[0]).png" width="200" height="200" />
+                        <p class="price"> @Model.verdin[0] kr.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4" target="vara">
+                <div class="voruContainer">
+                    <p class="voruFyrirsogn">@Model.nofn[1]</p>
+                    <img src="~/images/bjollur/@(Model.myndir[1]).png" width="200" height="200" />
+                    <p class="price">@Model.verdin[1] kr.</p>
+                </div>
+            </div>
+            <div class="col-md-4" target="vara">
+                <div class="voruContainer">
+                    <p class="voruFyrirsogn">@Model.nofn[2]</p>
+                    <img src="~/images/bjollur/@(Model.myndir[2]).png" width="200" height="200" />
+                    <p class="price">@Model.verdin[2] kr.</p>
+                </div>
+            </div>
+            <div class="col-md-4" target="vara">
+                <div class="voruContainer">
+                    <p class="voruFyrirsogn">@Model.nofn[3]</p>
+                    <img src="~/images/bjollur/@(Model.myndir[3]).png" width="200" height="200" />
+                    <p class="price">@Model.verdin[3] kr.</p>
+                </div>
+            </div>
+            <div class="col-md-4" target="vara">
+                <div class="voruContainer">
+                    <p class="voruFyrirsogn">@Model.nofn[4]</p>
+                    <img src="~/images/bjollur/@(Model.myndir[4]).png" width="200" height="200" />
+                    <p class="price">@Model.verdin[4] kr.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

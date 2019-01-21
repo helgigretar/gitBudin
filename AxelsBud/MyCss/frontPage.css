@@ -1,13 +1,14 @@
-﻿/*container fyrir vörurunar á forsíðunni*/
+﻿/*Verð á vörunni*/
+.price {
+    font-size: 2.5rem;
+}
+
+/*container fyrir vörurunar á forsíðunni*/
 .voruContainer{
     margin-top:20%;
     text-align:center;
 }
-.voruFyrirsogn{
-    display:flex;
-    justify-content:center;
-    font-size:4rem;
-}
+
 .footercolumn{
     font-size:2rem;
     color:white;
@@ -17,24 +18,32 @@ a{
 }
 /*Footer í phone view */
 @media (max-width: 790px) {
+    
     #rows {
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: grey;
+        background-color: #222;
         max-width: 100%;
         bottom: 0;
+        padding-top: 40px;
     }
-
 }
 /*Footer í Full view*/
 @media (min-width:789px){
     #rows {
+        padding-top:40px;
         display: flex;
         justify-content: space-between;
-        background-color: grey;
+        background-color: #222;
         padding-left: 20%;
+    }
+    .voruListarnir {
+        width: 20%;
+    }
+    .vorurnar{
+        width:80%;
     }
 
 }
@@ -46,7 +55,6 @@ a{
     border: none;
     cursor: pointer;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -79,4 +87,79 @@ a{
 .dropDownListi{
     list-style-type:none;
 }
+.mobile_svg {
+    margin-top: -1%;
+    margin:5px;
+}
+.hausMynd{
+    padding-left:5%;
+}
+#myndir {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+    color:white;
+}
+.AxelsBudTextinn >a  {
+   color: white;
+   font-size: 3rem;
+   position:absolute;
+   top:40px;
+   left:80px;
+}
+div[target=vorulisti] {
+    margin-left:-3%;
+}
+/* Hér þarf að determina hvort þetta á að vera 2 hjól á röð eða 3 eða 1*/
+/*1 röð*/
+@media(max-width:700px){
+    .voruListarnir {
+        width: 0%;
+    }
 
+    .vorurnar {
+        width: 100%;
+    }
+
+    div[target=vara] {
+        width: 100%;
+        background-color: green;
+    }
+}
+/* No greater than 900px, no less than 600px */
+@media (max-width:1000px) and (min-width:701px) {
+    .voruListarnir {
+        width: 0%
+    }
+
+    .vorurnar {
+        width: 100%;
+        background-color:red;
+    }
+    div[target=vara] {
+        width:50%;
+        background-color: purple;
+    }
+}
+/* No greater than 900px, no less than 600px */
+@media (max-width:1200px) and (min-width:1001px) {
+    .voruListarnir {
+        width: 40%;
+        margin-left: -4%;
+    }
+
+    .vorurnar {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    div[target=vara] {
+        width: 50%;
+        background-color: blue;
+    }
+}
+.voruFyrirsogn {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
