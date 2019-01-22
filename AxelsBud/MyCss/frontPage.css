@@ -18,22 +18,22 @@ a{
 }
 /*Footer í phone view */
 @media (max-width: 790px) {
-    
+
     #rows {
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         background-color: #222;
-        max-width: 100%;
         bottom: 0;
         padding-top: 40px;
+
     }
 }
 /*Footer í Full view*/
 @media (min-width:789px){
     #rows {
-        padding-top:40px;
+        padding-top: 40px;
         display: flex;
         justify-content: space-between;
         background-color: #222;
@@ -125,6 +125,15 @@ div[target=vorulisti] {
         width: 100%;
         background-color: green;
     }
+
+    .headerBreaker {
+        height: 100px;
+    }
+    #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
 }
 /* No greater than 900px, no less than 600px */
 @media (max-width:1000px) and (min-width:701px) {
@@ -140,26 +149,72 @@ div[target=vorulisti] {
         width:50%;
         background-color: purple;
     }
-}
-/* No greater than 900px, no less than 600px */
-@media (max-width:1200px) and (min-width:1001px) {
-    .voruListarnir {
-        width: 40%;
-        margin-left: -4%;
+    .breaker {
+        height: 280px;
     }
-
-    .vorurnar {
-        width: 80%;
-        margin-left: 10%;
+    .headerBreaker{
+        height:100px;
     }
-
-    div[target=vara] {
-        width: 50%;
-        background-color: blue;
+    #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-left: 20%;
     }
 }
-.voruFyrirsogn {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
+    /* No greater than 900px, no less than 600px */
+    @media (max-width:1400px) and (min-width:1001px) {
+        .voruListarnir {
+            width: 40%;
+            margin-left: -4%;
+        }
+
+        .vorurnar {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        div[target=vara] {
+            width: 50%;
+            background-color: blue;
+        }
+
+        .breaker {
+            height: 180px;
+        }
+
+        .headerBreaker {
+            height: 80px;
+        }
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-left: 20%;
+        }
+    }
+
+    .voruFyrirsogn {
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+    }
+/*One exception for ipad pro has to be last*/
+@media (max-width:1200px) and (min-width:900px) {
+    .breaker {
+        height: 500px;
+    }
+
+    .headerBreaker {
+        height: 100px;
+    }
+}
+@media (min-width:1400px) {
+    .breaker {
+        height: 100px;
+    }
+
+    .headerBreaker {
+        height: 100px;
+    }
 }

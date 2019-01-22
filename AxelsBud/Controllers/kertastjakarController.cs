@@ -27,5 +27,6 @@ namespace AxelsBud.Controllers
         public string lysing;
         public string mynd;
         public string verd;
+        public string ID;
     }
 }

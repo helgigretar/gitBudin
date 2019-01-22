@@ -1,4 +1,7 @@
-﻿.voruHaus{
+﻿.voruNafn{
+    font-size:1.5rem;
+}
+.voruHaus{
     display:flex;
     justify-content:center;
     font-size:3rem;

@@ -2,34 +2,38 @@
   {
     "Name": "Decibell",
     "verd": "1.290",
-    "mynd": "decibell",
-    "lysing": "Kemur bara í svörtu &&&"
-
+    "mynd": "bjollur/decibell",
+    "lysing": "Kemur bara í svörtu $",
+    "ID": "bjollur_0"
   },
   {
     "Name": "I love my bike",
     "verd": "tilboð",
-    "mynd": "electra_i_love_my_bike",
-    "lysing": "margir litir &&& stór bjalla með sígildri hringingu &&& festingar fylgja &&& "
+    "mynd": "bjollur/electra_i_love_my_bike",
+    "lysing": "margir litir $ stór bjalla með sígildri hringingu $ festingar fylgja",
+    "ID": "bjollur_1"
 
   },
   {
     "Name": "Paperclip",
     "verd": "990",
-    "mynd": "paperclip",
-    "lysing": "\"Bara til í svörtu &&& Sérstæð og falleg hönnun &&& Kemur í tveim stærðum &&&"
+    "mynd": "bjollur/paperclip",
+    "lysing": "Bara til í svörtu $ Sérstæð og falleg hönnun $ Kemur í tveim stærðum $",
+    "ID": "bjollur_2"
   },
   {
     "Name": "Compact II",
     "verd": "990",
-    "mynd": "compact_2",
-    "lysing": "Bara til í svörtu &&& Nútímaleg útfærsla á klasískri hönnun &&&"
+    "mynd": "bjollur/compact_2",
+    "lysing": "Bara til í svörtu $ Nútímaleg útfærsla á klasískri hönnun $",
+    "ID": "bjollur_3"
 
   },
   {
     "Name": "Ding dong",
     "verd": "2.490",
-    "mynd": "ding_dong",
-    "lysing": "flott bjalla í retró stíl &&&"
+    "mynd": "bjollur/ding_dong",
+    "lysing": "flott bjalla í retró stíl $",
+    "ID": "bjollur_4"
   }
 ]

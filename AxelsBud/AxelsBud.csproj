@@ -126,7 +126,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\auka_varahlutirController.cs" />
+    <Compile Include="Controllers\aukahlutirController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HjolController.cs" />
     <Compile Include="Controllers\kertastjakarController.cs" />
@@ -136,6 +136,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\bjollur.cs" />
+    <Compile Include="Models\bretti.cs" />
     <Compile Include="Models\vorur.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -153,10 +154,22 @@
     <Content Include="images\bjollur\ding_dong.png" />
     <Content Include="images\bjollur\electra_i_love_my_bike.png" />
     <Content Include="images\bjollur\paperclip.png" />
+    <Content Include="images\bogglaberar\bögglaberi_disc_large.png" />
+    <Content Include="images\bogglaberar\bögglageri_deluxe.png" />
+    <Content Include="images\bretti\brettasett_16.png" />
+    <Content Include="images\bretti\brettasett_20_ MTB.png" />
+    <Content Include="images\bretti\brettasett_viper_24-26_ 759.png" />
+    <Content Include="images\bretti\brettasett_viper_26-29_751.png" />
+    <Content Include="images\bretti\brettasett_viper_28_ 761.png" />
+    <Content Include="images\bretti\bretti_undir_dempara_26-29_ 726F.png" />
+    <Content Include="images\bretti\viper-x_24-29_726.png" />
     <Content Include="images\facebook.png" />
     <Content Include="images\frontTester.png" />
     <Content Include="images\home.png" />
     <Content Include="images\home.svg" />
+    <Content Include="images\hradamaelar\bontrager_trip_100.png" />
+    <Content Include="images\hradamaelar\velo_7.png" />
+    <Content Include="images\korfur\shopper_comfort.png" />
     <Content Include="images\location-pin.png" />
     <Content Include="images\location-pin.svg" />
     <Content Include="images\mail.png" />
@@ -170,12 +183,17 @@
     <Content Include="images\telephone.svg" />
     <Content Include="MyCss\frontPage.css" />
     <Content Include="MyCss\hjolin.css" />
+    <Content Include="MyCss\vorur.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Controllers\json.json" />
     <Content Include="json.json" />
     <Content Include="App_Data\bjollur.json" />
     <Content Include="App_Data\bremsur_girar.json" />
+    <Content Include="App_Data\bretti.json" />
+    <Content Include="App_Data\bogglaberar.json" />
+    <Content Include="App_Data\hradamaelar.json" />
+    <Content Include="App_Data\korfur.json" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -205,9 +223,13 @@
     <Content Include="Views\Hjol\barnaHjol.cshtml" />
     <Content Include="Views\kertastjakar\kertastjakar.cshtml" />
     <Content Include="Views\sagan\um.cshtml" />
-    <Content Include="Views\auka_varahlutir\auka_varahlutir.cshtml" />
-    <Content Include="Views\auka_varahlutir\bjollur.cshtml" />
+    <Content Include="Views\aukahlutir\auka_varahlutir.cshtml" />
+    <Content Include="Views\aukahlutir\bjollur.cshtml" />
     <Content Include="Views\vorur\vorur.cshtml" />
+    <Content Include="Views\aukahlutir\bretti.cshtml" />
+    <Content Include="Views\aukahlutir\bogglaberar.cshtml" />
+    <Content Include="Views\aukahlutir\hradamaelar.cshtml" />
+    <Content Include="Views\aukahlutir\korfur.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\karlaHjol\" />

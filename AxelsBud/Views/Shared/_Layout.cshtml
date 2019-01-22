@@ -41,13 +41,13 @@
                         <a class="dropbtn">aukahlutir </a>
                         <div class="dropdown-content">
                             <div>@Html.ActionLink("bjöllur", "", "bjollur")</div>
-                            <div>@Html.ActionLink("bretti", "", "Home")</div>
-                            <div>@Html.ActionLink("bögglaberar", "", "Home")</div>
-                            <div>@Html.ActionLink("hraðamælar", "", "Home")</div>
-                            <div>@Html.ActionLink("körfur", "", "Home")</div>
-                            <div>@Html.ActionLink("ljós", "", "Home")</div>
-                            <div>@Html.ActionLink("pumpur", "", "Home")</div>
-                            <div>@Html.ActionLink("standarar", "", "Home")</div>
+                            <div>@Html.ActionLink("bretti", "", "bretti")</div>
+                            <div>@Html.ActionLink("bögglaberar", "", "bogglaberar")</div>
+                            <div>@Html.ActionLink("hraðamælar", "", "hradamaelar")</div>
+                            <div>@Html.ActionLink("körfur", "", "korfur")</div>
+                            <div>@Html.ActionLink("ljós", "", "ljos")</div>
+                            <div>@Html.ActionLink("pumpur", "", "pumpur")</div>
+                            <div>@Html.ActionLink("standarar", "", "standarar")</div>
                             <div>@Html.ActionLink("stýrisendar", "", "Home")</div>
                             <div>@Html.ActionLink("vatnsflöskur og statíf", "", "Home")</div>
                             <div>@Html.ActionLink("lásar", "", "Home")</div>
@@ -115,7 +115,7 @@
 <script>
     window.onscroll = function () { myFunction() };
     function myFunction() {
-        if (window.scrollY > 60) {
+        if (window.scrollY > 40) {
             //var el = document.getElementById('myndir');
             //el.remove(); // Removes the div with the 'div-02' id
             var a = document.getElementById('myndir').style.display = "none";
