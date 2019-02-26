@@ -56,6 +56,52 @@ namespace AxelsBud
             "Körfur",
             "korfur",
             new { controller = "aukahlutir", action = "korfur" });
+            routes.MapRoute(
+            "Ljós",
+            "ljos",
+            new { controller = "aukahlutir", action = "ljos" });
+            routes.MapRoute(
+            "pedalar",
+            "pedalar",
+            new { controller = "aukahlutir", action = "pedalar" });
+            routes.MapRoute(
+            "pumpur",
+            "pumpur",
+            new { controller = "aukahlutir", action = "pumpur" });
+            routes.MapRoute(
+            "standarar",
+            "standarar",
+            new { controller = "aukahlutir", action = "standarar" });
+            routes.MapRoute(
+            "Stýrisendar",
+            "styrisendar",
+            new { controller = "aukahlutir", action = "styrisendar" });
+            routes.MapRoute(
+            "Vatnsfloskur og statíf",
+            "vatnsfloskur_statif",
+            new { controller = "aukahlutir", action = "vatnsfloskur_statif" });
+            routes.MapRoute(
+            "hnakkar",
+            "hnakkar",
+            new { controller = "aukahlutir", action = "hnakkar" });
+            routes.MapRoute(
+            "lasar",
+            "lasar",
+            new { controller = "aukahlutir", action = "lasar" });
+            routes.MapRoute(
+            "hjolastandar",
+            "hjolastandar",
+            new { controller = "hjolastandar", action = "hjolastandar" });
+
+            routes.MapRoute(
+            "Krakkarnir",
+            "krakkarnir",
+            new { controller = "krakkarnir", action = "krakkar" });
+
+            routes.MapRoute(
+            "Viðgerðir",
+            "vidgerd",
+            new { controller = "vidgerd", action = "vidgerd" });
 
 
 

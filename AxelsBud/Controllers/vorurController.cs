@@ -18,6 +18,12 @@ namespace AxelsBud.Controllers
         // GET: vorur
         public ActionResult vorur()
         {
+            names = null;
+            verd = null;
+            mynd = null;
+            //Þarf að búa til fylki
+            lysing = new string[30];
+            ids = null;
             //Náum í URI
             string tempUrl = HttpContext.Request.Url.AbsoluteUri.ToString();
             //Náum í vöruna
@@ -29,6 +35,16 @@ namespace AxelsBud.Controllers
             LoadJson("bogglaberar", vara);
             LoadJson("hradamaelar", vara);
             LoadJson("korfur", vara);
+            LoadJson("ljos", vara);
+            LoadJson("pedalar", vara);
+            LoadJson("pumpur", vara);
+            LoadJson("standarar", vara);
+            LoadJson("styrisendar", vara);
+            LoadJson("vatnsfloskur_statif", vara);
+            LoadJson("lasar", vara);
+            LoadJson("kertastjakar", vara);
+            //LoadJson("hnakkar", vara);
+            LoadJson("krakkar", vara);
             while (names== null)
             {
 

@@ -1,0 +1,16 @@
+﻿[
+  {
+    "Name": "Lás með tölum",
+    "verd": "1000",
+    "mynd": "lasar/las_me_tolum",
+    "lysing": "margir litir $ 3 stafa lykilorð",
+    "ID": "las_0"
+  },
+  {
+    "Name": "Lás með lykil",
+    "verd": "1000",
+    "mynd": "lasar/las_med_lykil",
+    "lysing": "margir litir $ opnast með lykil",
+    "ID": "las_1"
+  }
+]

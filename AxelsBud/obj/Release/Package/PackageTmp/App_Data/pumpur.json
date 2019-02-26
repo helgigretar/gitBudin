@@ -1,0 +1,16 @@
+﻿[
+  {
+    "Name": "gólf recharger",
+    "verd": "6.990",
+    "mynd": "pumpur/golf_fixed_pumpa_correct",
+    "lysing": "Hámarksþrýstingur 160psi (11bar)",
+    "ID": "pumpur_0"
+  },
+  {
+    "Name": "Zefal mini jet",
+    "verd": "1.990",
+    "mynd": "pumpur/zefal_mini_jet_extra",
+    "lysing": "Hámarksþrýstingur 11psi (7bar) $ Vegur 66gr $ Fyrir bæði bíl- og presta ventla",
+    "ID": "pumpur_1"
+  }
+]

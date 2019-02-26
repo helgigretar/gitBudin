@@ -84,6 +84,118 @@ namespace AxelsBud.Controllers
             };
             return View(results);
         }
+        //GET: ljos
+        public ActionResult ljos()
+        {
+            LoadJson("ljos");
+            var results = new bjollur()
+            {
+                lysingar = lysing,
+                myndir = mynd,
+                nofn = names,
+                verdin = verd,
+                audkenin = ids
+            };
+            return View(results);
+        }
+        //GET: pedalar
+        public ActionResult pedalar()
+        {
+            LoadJson("pedalar");
+            var results = new bjollur()
+            {
+                lysingar = lysing,
+                myndir = mynd,
+                nofn = names,
+                verdin = verd,
+                audkenin = ids
+            };
+            return View(results);
+        }
+        //GET: pumpur
+        public ActionResult pumpur()
+        {
+            LoadJson("pumpur");
+            var results = new bjollur()
+            {
+                lysingar = lysing,
+                myndir = mynd,
+                nofn = names,
+                verdin = verd,
+                audkenin = ids
+            };
+            return View(results);
+        }
+        //GET: standarar
+        public ActionResult standarar()
+        {
+            LoadJson("standarar");
+            var results = new bjollur()
+            {
+                lysingar = lysing,
+                myndir = mynd,
+                nofn = names,
+                verdin = verd,
+                audkenin = ids
+            };
+            return View(results);
+        }
+        //GET: styrisendar
+        public ActionResult styrisendar()
+        {
+            LoadJson("styrisendar");
+            var results = new bjollur()
+            {
+                lysingar = lysing,
+                myndir = mynd,
+                nofn = names,
+                verdin = verd,
+                audkenin = ids
+            };
+            return View(results);
+        }
+        //GET: vatnsfloskur_statif
+        public ActionResult vatnsfloskur_statif()
+        {
+            LoadJson("vatnsfloskur_statif");
+            var results = new bjollur()
+            {
+                lysingar = lysing,
+                myndir = mynd,
+                nofn = names,
+                verdin = verd,
+                audkenin = ids
+            };
+            return View(results);
+        }
+        //GET: hnakkar
+        public ActionResult hnakkar()
+        {
+            LoadJson("hnakkar");
+            var results = new bjollur()
+            {
+                lysingar = lysing,
+                myndir = mynd,
+                nofn = names,
+                verdin = verd,
+                audkenin = ids
+            };
+            return View(results);
+        }
+        //GET: Lasar
+        public ActionResult lasar()
+        {
+            LoadJson("lasar");
+            var results = new bjollur()
+            {
+                lysingar = lysing,
+                myndir = mynd,
+                nofn = names,
+                verdin = verd,
+                audkenin = ids
+            };
+            return View(results);
+        }
         //Load the Json
         public void LoadJson(string sub)
         {

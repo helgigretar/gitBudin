@@ -1,0 +1,16 @@
+﻿[
+  {
+    "Name": "Bontrager trip 100",
+    "verd": "9.990",
+    "mynd": "hradamaelar/bontrager_trip_100",
+    "lysing": "Analogue þráðlaust merkii $ Ferðavegalengd og stillanleg heildarvegarlengd $ Sýnir hraða, meðalhraða og hámarkshraða $ Sjálfvirkt start/stopp $ Klukka (12/24), heildartími á hjólinu og skeiðklukka $ Brenndar kaloríur ",
+    "ID": "hradamaelar_0"
+  },
+  {
+    "Name": "velo 7",
+    "verd": "4.590",
+    "mynd": "hradamaelar/velo_7",
+    "lysing": "Einfaldur hraðamælirsem inniheldur 7 aðgerðir: $ Hraði $ hámarkshraði $ meðalhraði $ skeiðklukka $ klukka $ ferðavegarlengd $ heildarvegalengd",
+    "ID": "hradamaelar_1"
+  }
+]

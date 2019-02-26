@@ -1,0 +1,23 @@
+﻿[
+  {
+    "Name": "Silfurlitaður 3 arma",
+    "verd": "4.500",
+    "mynd": "kertastjakar/3armar",
+    "lysing": "Heimagerður kertasjaki $ gerður úr pípulagningarörum $ Íslensk hönnun",
+    "ID": "kertastjakar_1"
+  },
+  {
+    "Name": "Andrew ||| hvítur",
+    "verd": "4.500",
+    "mynd": "kertastjakar/Andrew3_hvitur",
+    "lysing": "Heimagerður kertasjaki $ gerður úr pípulagningarörum $ Íslensk hönnun",
+    "ID": "kertastjakar_2"
+  },
+  {
+    "Name": "Andrew ||| svartur",
+    "verd": "4.500",
+    "mynd": "kertastjakar/Andrew3_svartur",
+    "lysing": "Heimagerður kertasjaki $ gerður úr pípulagningarörum $ Íslensk hönnun",
+    "ID": "kertastjakar_3"
+  }
+]

@@ -1,0 +1,30 @@
+﻿[
+  {
+    "Name": "framljós omni 3",
+    "verd": "2.490",
+    "mynd": "ljos/framljss_omni_3",
+    "lysing": "Lýsir í 180° $  2*AAA rafhlöður sem endast í allt að 15klst $ 3 stillingar $ Festing fylgir",
+    "ID": "ljos_0"
+  },
+  {
+    "Name": "afturljós omni 3",
+    "verd": "2.490",
+    "mynd": "ljos/afturljos_omni 3",
+    "lysing": "Lýsir í 180° $  2*AAA rafhlöður sem endast í allt að 15klst $ 3 stillingar $ Festing fylgir",
+    "ID": "ljos_1"
+  },
+  {
+    "Name": "cateye HL-EL135",
+    "verd": "4.490",
+    "mynd": "ljos/cateye_hl-el135",
+    "lysing": "2xAA rafhlöður sem endast allt að 80klst á stöðugri stillingu og 320 á blikkandi stillingu $ 3 stillingar $ Festing fylgir",
+    "ID": "ljos_2"
+  },
+  {
+    "Name": "glit á reina",
+    "verd": "1.590",
+    "mynd": "ljos/glit_a_teina 2",
+    "lysing": "Endurkín í 360° $",
+    "ID": "ljos_3"
+  }
+]

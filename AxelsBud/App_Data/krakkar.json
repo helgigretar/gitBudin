@@ -1,0 +1,58 @@
+﻿[
+  {
+    "Name": "bjöllur með Cars",
+    "verd": "1.290",
+    "mynd": "krakkar/bjollur",
+    "lysing": "Bjöllur með Cars myndum framan á $ Bjöllur sem hringja $ Hægt að velja í ýmsum litum",
+    "ID": "krakkar_1"
+  },
+  {
+    "Name": "Bjöllur með Frozen",
+    "verd": "1.290",
+    "mynd": "krakkar/bjollur_frozen",
+    "lysing": "Bjöllur með Frozen myndum framan á $ Bjöllur sem hringja $ Hægt að velja í ýmsum litum",
+    "ID": "krakkar_2"
+  },
+  {
+    "Name": "Bjöllur með Planes",
+    "verd": "1.290",
+    "mynd": "krakkar/bjollur_planes",
+    "lysing": "Bjöllur með planes myndum framan á $ Bjöllur sem hringja $ Hægt að velja í ýmsum litum",
+    "ID": "krakkar_3"
+  },
+  {
+    "Name": "Bjöllur með Princess",
+    "verd": "1.290",
+    "mynd": "krakkar/bjollur_princess",
+    "lysing": "Bjöllur með princess myndum framan á $ Bjöllur sem hringja $ Hægt að velja í ýmsum litum",
+    "ID": "krakkar_4"
+  },
+  {
+    "Name": "Hjálpardekk 12-20 tommu",
+    "verd": "4.490",
+    "mynd": "krakkar/hjalpardekk_12_20",
+    "lysing": "Hjálpardekk fyrir 12-20 tommu barnahjól $ Passa á flest hjól",
+    "ID": "krakkar_5"
+  },
+  {
+    "Name": "Hlaupahjól",
+    "verd": "1.290",
+    "mynd": "krakkar/hlaupahjol_original_street",
+    "lysing": "Létta klasskíska hlaupahjólið sem auðvelt er að leggja saman $ ólin fylgir $ Fótasvæði 510x100 mm $ Stillanlegt stýri # vegur 2780 grömm $ Hámarksþyngd á hjólið er 100kg",
+    "ID": "krakkar_6"
+  },
+  {
+    "Name": "Körfur með Frozen",
+    "verd": "1.990",
+    "mynd": "krakkar/korfur_frozen",
+    "lysing": "Plastkarfa með festingum $ Hægt að velja í ýmsum litum",
+    "ID": "krakkar_7"
+  },
+  {
+    "Name": "Körfur með Princess",
+    "verd": "1.990",
+    "mynd": "krakkar/korfur_princess",
+    "lysing": "Plastkarfa með festingum $ Hægt að velja í ýmsum litum",
+    "ID": "krakkar_8"
+  }
+]

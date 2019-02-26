@@ -1,0 +1,16 @@
+﻿[
+  {
+    "Name": "trek vatnsbrúsi",
+    "verd": "990",
+    "mynd": "vatnsfloskur_statif/trek_vatnsbrusinn",
+    "lysing": "100% niðurbrjótanlegt plast $ ",
+    "ID": "vatnsfloskur_statif_0"
+  },
+  {
+    "Name": "vatnsflöskustatíf",
+    "verd": "1.290",
+    "mynd": "vatnsfloskur_statif/vatnsfloskustatíf",
+    "lysing": "Svört álgrind, 6mm í þvermál $ Vegur 62g ",
+    "ID": "vatnsfloskur_statif_0"
+  }
+]

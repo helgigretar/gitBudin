@@ -1,0 +1,46 @@
+﻿[
+  {
+    "Name": "standari í stell að aftan",
+    "verd": " 3.990",
+    "mynd": "standarar/standari_i_stell_ad_aftan",
+    "lysing": "Öflugur standari sem heldur hjólinu upp þó að það séu töskur á bögglaberanum $ Passar aðeins á áhveðin stell frá trek sem gera ráð fyrir þessum standara. ",
+    "ID": "standarar_0"
+  },
+  {
+    "Name": "standari á 12-20´´",
+    "verd": " 1.490",
+    "mynd": "standarar/test",
+    "lysing": "Stillanlegur standari  $",
+    "ID": "standarar_1"
+  },
+  {
+    "Name": "xlc standari undir miðju",
+    "verd": " 1.990",
+    "mynd": "standarar/xlc_standari_fyrir_midju",
+    "lysing": "Stillanlegur standari fyrir 24-28´´ hjól $ Fyrir hjól með standara festingu undir miðju hjóli $ Stór gúmmí fótur fyrir meiri stöðuleika",
+    "ID": "standarar_2"
+  },
+  {
+    "Name": "standari ál 24-28´´ rear disc multi I",
+    "verd": " 3.990",
+    "mynd": "standarar/standari_a_24-28´´_rear_disc_multi_I",
+    "lysing": "Stillanlegur standari fyrir 24-28´´ hjól $",
+    "ID": "standarar_3"
+  },
+  {
+    "Name": "standri ál 26-28´´",
+    "verd": " 3.490",
+    "mynd": "standarar/standari_al_26-28´´",
+    "lysing": "Stillanlegur standari fyrir 26-28´´ hjól $",
+    "ID": "standarar_4"
+  },
+  {
+    "Name": "Xlc standari fyrir hjól með diskabremsur 24-28´´",
+    "verd": " 3.990",
+    "mynd": "standarar/xlc_standari_fyrir_hjol_med_diskabremsur_24-28´´",
+    "lysing": "Virkar með diskabremsur $ Lengjanleg festing og hægt að festa á marga vegu svo hann passar á gerðir hjólastella $ Fyrir 24-28´´ hjól",
+    "ID": "standarar_5"
+  }
+
+
+]

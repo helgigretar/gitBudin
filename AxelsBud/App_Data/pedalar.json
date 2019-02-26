@@ -1,0 +1,23 @@
+﻿[
+  {
+    "Name": "pedalar fyrir barnahjól 9/16´´",
+    "verd": "990",
+    "mynd": "pedalar/pedalar_fyrir_barnahjól 916",
+    "lysing": "$",
+    "ID": "pedalar_0"
+  },
+  {
+    "Name": "pedalar fyrir barnhjól 1/2´´",
+    "verd": "990",
+    "mynd": "pedalar/pedalar_fyrir_barnhjol 12",
+    "lysing": "$",
+    "ID": "pedalar_1"
+  },
+  {
+    "Name": "pedalar 9/16´´ classic",
+    "verd": "1.990",
+    "mynd": "pedalar/pedalar_916_fullordins",
+    "lysing": "$",
+    "ID": "pedalar_2"
+  }
+]
