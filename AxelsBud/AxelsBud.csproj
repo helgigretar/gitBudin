@@ -242,6 +242,7 @@
     <Content Include="images\vatnsfloskur_statif\trek_vatnsbrusinn.png" />
     <Content Include="images\vatnsfloskur_statif\vatnsfloskustatíf.png" />
     <Content Include="MyCss\frontPage.css" />
+    <Content Include="MyCss\hedder.css" />
     <Content Include="MyCss\hjolaStandar.css" />
     <Content Include="MyCss\hjolin.css" />
     <Content Include="MyCss\krakkar.css" />
@@ -279,8 +280,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <None Include="text\json.json" />
-    <Content Include="videos\fyrri.mp4" />
-    <Content Include="videos\seinni.mp4" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -316,8 +315,6 @@
     <Content Include="Views\hjolastandar\hjolastandar.cshtml" />
     <Content Include="Views\krakkarnir\krakkar.cshtml" />
     <Content Include="Views\vidgerd\vidgerd.cshtml" />
-    <Content Include="Views\sagan\heimildamynd.cshtml" />
-    <Content Include="Views\sagan\opnunartimar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\karlaHjol\" />
