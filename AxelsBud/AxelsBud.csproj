@@ -317,6 +317,7 @@
     <Content Include="Views\krakkarnir\krakkar.cshtml" />
     <Content Include="Views\vidgerd\vidgerd.cshtml" />
     <Content Include="Views\sagan\heimildamynd.cshtml" />
+    <Content Include="Views\sagan\opnunartimar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\karlaHjol\" />

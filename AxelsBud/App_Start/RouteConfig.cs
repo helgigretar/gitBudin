@@ -108,6 +108,11 @@ namespace AxelsBud
             "heimildamynd",
             new { controller = "sagan", action = "heimildamynd" });
 
+            routes.MapRoute(
+            "opnunartimar",
+            "opnunartimar",
+            new { controller = "sagan", action = "opnunartimar" });
+
 
 
             routes.MapRoute(

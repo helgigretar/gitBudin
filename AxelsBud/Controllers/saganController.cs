@@ -17,5 +17,10 @@ namespace AxelsBud.Controllers
         {
             return View();
         }
+        public ActionResult opnunartimar()
+        {
+            return View();
+        }
+        
     }
 }
