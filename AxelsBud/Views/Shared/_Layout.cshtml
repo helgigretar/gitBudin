@@ -70,7 +70,14 @@
                     <li class="nav_button">@Html.ActionLink("Hjólastandar", "", "hjolastandar")</li>
                     <li class="nav_button">@Html.ActionLink("Hjóla viðgerðir", "", "vidgerd")</li>
                     <li class="nav_button">@Html.ActionLink("Kertastjakar", "", "kertastjakar")</li>
-                    <li class="nav_button">@Html.ActionLink("Um Axelsbúð", "", "umAxelsbud")</li>
+                    <li class="dropdown nav_button">
+                        <a class="">Um Axelsbúð</a>
+                        <div class="dropdown_content">
+                            <div>@Html.ActionLink("Sagan um Axelsbúð", "", "umAxelsbud")</div>
+                            <div>@Html.ActionLink("Heimildarmynd", "", "heimildarmynd")</div>
+                            <div>@Html.ActionLink("Opnunartímar", "", "opnunartímar")</div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
