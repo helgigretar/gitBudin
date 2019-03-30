@@ -1,0 +1,30 @@
+﻿@model AxelsBud.Models.bjollur
+@{
+    ViewBag.Title = "Varahlutir";
+}
+<link href="~/MyCss/hjolin.css" rel="stylesheet" type="text/css" />
+<link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
+<html>
+<body>
+    <!-- Fyrsta myndin Þetta er flipi á reiðhjólasíðuna-->
+    <div class="container" style="display:flex;">
+        <div class="voruListarnir">
+            <div target="voruListi">
+                <div class="dropDownListiVoruContainer">
+                    <ul class="unorderdListVoruContainer">
+                        <div class="vorurhaus">aukahlutir</div>
+                        <li class="voruLinkur">@Html.ActionLink("Vírar,barkar,endar og beygjur", "", "varahlutir/bremsubunadur")</li>
+                        <li class="voruLinkur">@Html.ActionLink("Gírskiptar", "", "varahlutir/girskiptingar")</li>
+                        <li class="voruLinkur">@Html.ActionLink("Keðjur og gírhlífar", "", "varahlutir/kedjur_girhlifar")</li>
+                        <li class="voruLinkur_valinn">@Html.ActionLink("Gjarðir ", "", "varahlutir/gjardir")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="vorurnar">
+            <div class="vorurnar_title"> Gjarðir</div>
+            
+        </div>
+    </div>
+</body>
+</html>

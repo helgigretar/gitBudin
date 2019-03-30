@@ -133,6 +133,7 @@
     <Compile Include="Controllers\kertastjakarController.cs" />
     <Compile Include="Controllers\krakkarnirController.cs" />
     <Compile Include="Controllers\saganController.cs" />
+    <Compile Include="Controllers\varahlutirController.cs" />
     <Compile Include="Controllers\vidgerdController.cs" />
     <Compile Include="Controllers\vorurController.cs" />
     <Compile Include="Global.asax.cs">
@@ -318,6 +319,12 @@
     <Content Include="Views\vidgerd\vidgerd.cshtml" />
     <Content Include="Views\sagan\heimildamynd.cshtml" />
     <Content Include="Views\sagan\opnunartimar.cshtml" />
+    <Content Include="Views\varahlutir\bremsubunadur.cshtml" />
+    <Content Include="Views\varahlutir\girskiptar.cshtml" />
+    <Content Include="Views\varahlutir\kedjur_girhlifar.cshtml" />
+    <Content Include="Views\varahlutir\gjardir.cshtml" />
+    <Content Include="Views\varahlutir\index.cshtml" />
+    <Content Include="Views\aukahlutir\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\karlaHjol\" />

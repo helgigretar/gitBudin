@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Web.Mvc;
 using AxelsBud.Models;
+using System.Diagnostics;
 
 namespace AxelsBud.Controllers
 {
@@ -14,9 +15,38 @@ namespace AxelsBud.Controllers
         private static string[] mynd = new string[100];
         private static string[] lysing = new string[100];
         private static string[] ids = new string[100];
+        private static int counter = 0;
         // GET: auka_varahlutir
+        public ActionResult index()
+        {
+            counter = 0;
+            LoadJson("bjollur");
+            LoadJson("bretti");
+            LoadJson("bogglaberar");
+            LoadJson("hradamaelar");
+            LoadJson("korfur");
+            LoadJson("ljos");
+            LoadJson("pedalar");
+            LoadJson("pumpur");
+            LoadJson("standarar");
+            LoadJson("vatnsfloskur_statif");
+            LoadJson("styrisendar");
+            LoadJson("lasar");            
+            //Fjarlægði hnakkar
+            var results = new bjollur()
+            {
+                lysingar = lysing,
+                myndir = mynd,
+                nofn = names,
+                verdin = verd,
+                audkenin = ids,
+                maxer = counter,
+            };
+            return View(results);
+        }
         public ActionResult bjollur()
         {
+            counter = 0;
             LoadJson("bjollur");
             var results = new bjollur()
             {
@@ -31,6 +61,7 @@ namespace AxelsBud.Controllers
         //Get: bretti
         public ActionResult bretti()
         {
+            counter = 0;
             LoadJson("bretti");
             var results = new bjollur()
             {
@@ -45,6 +76,7 @@ namespace AxelsBud.Controllers
         //Get: bogglaberar
         public ActionResult bogglaberar()
         {
+            counter = 0;
             LoadJson("bogglaberar");
             var results = new bjollur()
             {
@@ -59,6 +91,7 @@ namespace AxelsBud.Controllers
         //Get: hradamaelar
         public ActionResult hradamaelar()
         {
+            counter = 0;
             LoadJson("hradamaelar");
             var results = new bjollur()
             {
@@ -73,6 +106,7 @@ namespace AxelsBud.Controllers
         //GET: korfur
         public ActionResult korfur()
         {
+            counter = 0;
             LoadJson("korfur");
             var results = new bjollur()
             {
@@ -87,6 +121,7 @@ namespace AxelsBud.Controllers
         //GET: ljos
         public ActionResult ljos()
         {
+            counter = 0;
             LoadJson("ljos");
             var results = new bjollur()
             {
@@ -101,6 +136,7 @@ namespace AxelsBud.Controllers
         //GET: pedalar
         public ActionResult pedalar()
         {
+            counter = 0;
             LoadJson("pedalar");
             var results = new bjollur()
             {
@@ -115,6 +151,7 @@ namespace AxelsBud.Controllers
         //GET: pumpur
         public ActionResult pumpur()
         {
+            counter = 0;
             LoadJson("pumpur");
             var results = new bjollur()
             {
@@ -129,6 +166,7 @@ namespace AxelsBud.Controllers
         //GET: standarar
         public ActionResult standarar()
         {
+            counter = 0;
             LoadJson("standarar");
             var results = new bjollur()
             {
@@ -143,6 +181,7 @@ namespace AxelsBud.Controllers
         //GET: styrisendar
         public ActionResult styrisendar()
         {
+            counter = 0;
             LoadJson("styrisendar");
             var results = new bjollur()
             {
@@ -157,6 +196,7 @@ namespace AxelsBud.Controllers
         //GET: vatnsfloskur_statif
         public ActionResult vatnsfloskur_statif()
         {
+            counter = 0;
             LoadJson("vatnsfloskur_statif");
             var results = new bjollur()
             {
@@ -171,6 +211,7 @@ namespace AxelsBud.Controllers
         //GET: hnakkar
         public ActionResult hnakkar()
         {
+            counter = 0;
             LoadJson("hnakkar");
             var results = new bjollur()
             {
@@ -185,6 +226,7 @@ namespace AxelsBud.Controllers
         //GET: Lasar
         public ActionResult lasar()
         {
+            counter = 0;
             LoadJson("lasar");
             var results = new bjollur()
             {
@@ -204,7 +246,6 @@ namespace AxelsBud.Controllers
             {
                 string json = r.ReadToEnd();
                 var items = JsonConvert.DeserializeObject<List<Item>>(json);
-                int counter = 0;
                 foreach (var data in items)
                 {
                     names[counter] = data.Name;

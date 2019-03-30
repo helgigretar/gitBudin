@@ -34,7 +34,7 @@ namespace AxelsBud
            new { controller = "sagan", action = "um" });
             routes.MapRoute(
             "aukahlutir bjölur",
-            "bjollur",
+            "aukahlutir/bjollur",
             new { controller = "aukahlutir", action = "bjollur" });
             routes.MapRoute(
             "Vara ? nafn á vöru",
@@ -42,55 +42,55 @@ namespace AxelsBud
             new { controller = "vorur", action = "vorur" });
             routes.MapRoute(
             "aukahlutir bretti",
-            "bretti",
+            "aukahlutir/bretti",
             new { controller = "aukahlutir", action = "bretti" });
             routes.MapRoute(
             "bögglaberar",
-            "bogglaberar",
+            "aukahlutir/bogglaberar",
             new { controller = "aukahlutir", action = "bogglaberar" });
             routes.MapRoute(
             "Hraðamælar",
-            "hradamaelar",
+            "aukahlutir/hradamaelar",
             new { controller = "aukahlutir", action = "hradamaelar" });
             routes.MapRoute(
             "Körfur",
-            "korfur",
+            "aukahlutir/korfur",
             new { controller = "aukahlutir", action = "korfur" });
             routes.MapRoute(
             "Ljós",
-            "ljos",
+            "aukahlutir/ljos",
             new { controller = "aukahlutir", action = "ljos" });
             routes.MapRoute(
             "pedalar",
-            "pedalar",
+            "aukahlutir/pedalar",
             new { controller = "aukahlutir", action = "pedalar" });
             routes.MapRoute(
-            "pumpur",
+            "aukahlutir/pumpur",
             "pumpur",
             new { controller = "aukahlutir", action = "pumpur" });
             routes.MapRoute(
-            "standarar",
+            "aukahlutir/standarar",
             "standarar",
             new { controller = "aukahlutir", action = "standarar" });
             routes.MapRoute(
             "Stýrisendar",
-            "styrisendar",
+            "aukahlutir/styrisendar",
             new { controller = "aukahlutir", action = "styrisendar" });
             routes.MapRoute(
             "Vatnsfloskur og statíf",
-            "vatnsfloskur_statif",
+            "aukahlutir/vatnsfloskur_statif",
             new { controller = "aukahlutir", action = "vatnsfloskur_statif" });
             routes.MapRoute(
             "hnakkar",
-            "hnakkar",
+            "aukahlutir/hnakkar",
             new { controller = "aukahlutir", action = "hnakkar" });
             routes.MapRoute(
             "lasar",
-            "lasar",
+            "aukahlutir/lasar",
             new { controller = "aukahlutir", action = "lasar" });
             routes.MapRoute(
             "hjolastandar",
-            "hjolastandar",
+            "aukahlutir/hjolastandar",
             new { controller = "hjolastandar", action = "hjolastandar" });
 
             routes.MapRoute(
@@ -113,6 +113,35 @@ namespace AxelsBud
             "opnunartimar",
             new { controller = "sagan", action = "opnunartimar" });
 
+            routes.MapRoute(
+            "varahlutir",
+            "varahlutir",
+            new { controller = "varahlutir", action = "index" });
+
+            routes.MapRoute(
+            "aukahlutir",
+            "aukahlutir",
+            new { controller = "aukahlutir", action = "index" });
+
+            routes.MapRoute(
+            "varahlutir_Bremsubunadur",
+            "varahlutir/bremsubunadur",
+            new { controller = "varahlutir", action = "bremsubunadur" });
+
+            routes.MapRoute(
+            "varahlutir_girskiptar",
+            "varahlutir/girskiptingar",
+            new { controller = "varahlutir", action = "girskiptar" });
+
+            routes.MapRoute(
+            "varahlutir_gjardir",
+            "varahlutir/gjardir",
+            new { controller = "varahlutir", action = "gjardir" });
+
+            routes.MapRoute(
+            "varahlutir_kedjur_girhlifar",
+            "varahlutir/kedjur_girhlifar",
+            new { controller = "varahlutir", action = "kedjur_girhlifar" });
 
 
             routes.MapRoute(
