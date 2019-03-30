@@ -1,0 +1,32 @@
+﻿[
+  {
+    "Name": "Bremsupúðar v-bremsu 70mm",
+    "verd": "1.290",
+    "mynd": "bremsubunadur/bremsupudar_v_bremsu_70mm",
+    "lysing": "kemur í setti #",
+    "ID": "bremsubunadur_0"
+  },
+  {
+    "Name": "Bremsuarmar v-bremsu sett",
+    "verd": "2.990",
+    "mynd": "bremsubunadur/bremsuarmar_v_bremsu_sett",
+    "lysing": "Armar og bremsupúðar eru í setti # Ál # 85 mm lengd á örmum",
+    "ID": "bremsubunadur_1"
+  },
+  {
+    "Name": "Bresmuhandföng",
+    "verd": "2.990",
+    "mynd": "bremsubunadur/bremsuhandfong",
+    "lysing": "Selt í settum # Bæði fyrir v-bremsur og cantilever" ,
+    "ID": "bremsubunadur_2"
+
+  },
+  {
+    "Name": "Bremsudiskur 160mm",
+    "verd": "3.990",
+    "mynd": "bremsubunadur/bremsudiskur_160mm",
+    "lysing": "Enginn nánari lýsing # ",
+    "ID": "bremsubunadur_3"
+
+  }
+]

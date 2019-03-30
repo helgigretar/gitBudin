@@ -1,0 +1,53 @@
+﻿@model AxelsBud.Models.bjollur
+@{
+    ViewBag.Title = "Bjöllur";
+}
+<link href="~/MyCss/hjolin.css" rel="stylesheet" type="text/css" />
+<link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
+<html>
+<body>
+    <!-- Fyrsta myndin Þetta er flipi á reiðhjólasíðuna-->
+    <div class="container" style="display:flex;">
+        <div class="voruListarnir">
+            <div target="voruListi">
+                <div class="dropDownListiVoruContainer">
+                    <ul class="unorderdListVoruContainer">
+                        <div class="vorurhaus">aukahlutir</div>
+                        <li class="voruLinkur">@Html.ActionLink("bjöllur", "", "aukahlutir/bjollur")</li>
+                        <li class="voruLinkur">@Html.ActionLink("bretti", "", "aukahlutir/bretti")</li>
+                        <li class="voruLinkur">@Html.ActionLink("bögglaberar", "", "aukahlutir/bogglaberar")</li>
+                        <li class="voruLinkur">@Html.ActionLink("hraðamælar", "", "aukahlutir/hradamaelar")</li>
+                        <li class="voruLinkur">@Html.ActionLink("körfur", "", "aukahlutir/korfur")</li>
+                        <li class="voruLinkur">@Html.ActionLink("ljós", "", "aukahlutir/ljos")</li>
+                        <li class="voruLinkur">@Html.ActionLink("pedalar", "", "aukahlutir/pedalar")</li>
+                        <li class="voruLinkur">@Html.ActionLink("pumpur", "", "aukahlutir/pumpur")</li>
+                        <li class="voruLinkur">@Html.ActionLink("standarar", "", "aukahlutir/standarar")</li>
+                        <li class="voruLinkur">@Html.ActionLink("stýrisendar", "", "aukahlutir/styrisendar")</li>
+                        <li class="voruLinkur">@Html.ActionLink("vatnsflöskur og statíf", "", "aukahlutir/vatnsfloskur_statif")</li>
+                        <li class="voruLinkur">@Html.ActionLink("hnakkar", "", "aukahlutir/hnakkar")</li>
+                        <li class="voruLinkur">@Html.ActionLink("lásar", "", "aukahlutir/lasar")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="vorurnar">
+            <div class="vorurnar_title"> Allir aukahlutir</div>
+            @{ 
+               for(int count =0;count<=Model.maxer;count++)
+                {
+                    <div class="col-md-4" target="vara">
+                        <a href="/vorur?@(Model.audkenin[@count])">
+                            <div class="voruContainer">
+                                <p class="voruFyrirsogn">@Model.nofn[@count]</p>
+                                <img src="~/images/@(Model.myndir[@count]).png" width="200" height="200" />
+                                <p class="price"> @Model.verdin[@count] kr.</p>
+                            </div>
+                        </a>
+                    </div>
+                }
+
+            }
+
+        </div>
+</body>
+</html>

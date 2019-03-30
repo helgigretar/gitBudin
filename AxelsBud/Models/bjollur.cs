@@ -12,6 +12,7 @@ namespace AxelsBud.Models
         public String [] lysingar{ get; set; }
         public String [] myndir{ get; set; }
         public String [] audkenin { get; set; }
+        public int maxer { get; set; }
 
     }
 }

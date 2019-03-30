@@ -1,0 +1,58 @@
+﻿[
+  {
+    "Name": "Afturskiptir tourney 6/7G",
+    "verd": "3.490",
+    "mynd": "girskiptar/afturskiptir_tourney_67G",
+    "lysing": "6-7 gíra # RD-TY300D #",
+    "ID": "girskiptar_1"
+  },
+  {
+    "Name": "Afturskiptir Altus 7/8G",
+    "verd": "5.990",
+    "mynd": "girskiptar/afturskiptir_altus_78G",
+    "lysing": "6-7 gíra # Shimano tourney TY300 #",
+    "ID": "girskiptar_2"
+  },
+  {
+    "Name": "Afturskiptir acera *9G",
+    "verd": "7.990",
+    "mynd": "girskiptar/afturskiptir_acera_9g",
+    "lysing": "9 gíra # RD-T300SGSL #",
+    "ID": "girskiptar_3"
+  },
+  {
+    "Name": "Puttaskiptir 7G",
+    "verd": "3.990",
+    "mynd": "girskiptar/puttaskiptir_7g",
+    "lysing": "Frábær kostur fyrir hinn almenna reiðhjóla unnenda # 7 gírar hægra megin # ",
+    "ID": "girskiptar_4"
+  },
+  {
+    "Name": "Puttaskiptir 3G",
+    "verd": "3.990",
+    "mynd": "girskiptar/puttaskiptir_3g",
+    "lysing": "Frábær kostur fyrir hinn almenna reiðhjóla unnenda",
+    "ID": "girskiptar_5"
+  },
+  {
+    "Name": "Grip shift 7H MRX comp",
+    "verd": "2.990",
+    "mynd": "girskiptar/gripshift_7h_mrx_comp",
+    "lysing": "Aftur skipting # 7 gíra",
+    "ID": "girskiptar_6"
+  },
+  {
+    "Name": "Grip shift 6H MRX micro",
+    "verd": "2.990",
+    "mynd": "girskiptar/gripshif_6h_mrx_micro",
+    "lysing": "Aftur skipting # 6 gíra",
+    "ID": "girskiptar_7"
+  },
+  {
+    "Name": "Grip shift rear 5h MRX nicro",
+    "verd": "2.990",
+    "mynd": "girskiptar/gripshift_rear_5h_mrx_micro",
+    "lysing": "Aftur skipting # 5 gíra",
+    "ID": "girskiptar_8"
+  }
+]
