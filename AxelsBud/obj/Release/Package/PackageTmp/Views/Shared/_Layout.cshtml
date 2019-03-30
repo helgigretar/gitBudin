@@ -25,7 +25,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Axelsbúð", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -71,7 +70,23 @@
                     <li>@Html.ActionLink("Hjólastandar", "", "hjolastandar")</li>
                     <li>@Html.ActionLink("setja hjól í vðgerð", "", "vidgerd")</li>
                     <li>@Html.ActionLink("Kertastjakar", "", "kertastjakar")</li>
-                    <li>@Html.ActionLink("Sagan um Axelsbúð", "", "umAxelsbud")</li>
+
+
+                    <li class="dropdown">
+                        <a class="dropbtn">um Axelsbúð </a>
+                        <div class="dropdown-content">
+                            <div>@Html.ActionLink("Sagan um Axelsbúð", "", "umAxelsbud")</div>
+                            <div>@Html.ActionLink("Heimildamynd um Axeksbúð", "", "heimildamynd")</div>
+                            
+                            
+                        </div>
+                    </li>
+
+
+
+
+
+
                 </ul>
             </div>
         </div>
@@ -116,7 +131,7 @@
 <script>
     window.onscroll = function () { myFunction() };
     function myFunction() {
-        if (window.scrollY > 60) {
+        if (window.scrollY > 1) {
             //var el = document.getElementById('myndir');
             //el.remove(); // Removes the div with the 'div-02' id
             var a = document.getElementById('myndir').style.display = "none";

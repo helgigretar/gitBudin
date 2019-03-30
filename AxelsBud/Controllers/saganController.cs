@@ -13,5 +13,14 @@ namespace AxelsBud.Controllers
         {
             return View();
         }
+        public ActionResult heimildamynd()
+        {
+            return View();
+        }
+        public ActionResult opnunartimar()
+        {
+            return View();
+        }
+        
     }
 }
