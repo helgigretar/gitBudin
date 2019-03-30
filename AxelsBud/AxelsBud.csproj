@@ -217,7 +217,12 @@
     <Content Include="images\krakkar\bjollur_planes.png" />
     <Content Include="images\krakkar\bjollur_princess.png" />
     <Content Include="images\krakkar\hjalpardekk_12_20.png" />
+    <Content Include="images\krakkar\hlaupahjol_glow.png" />
+    <Content Include="images\krakkar\hlaupahjol_matt.png" />
     <Content Include="images\krakkar\hlaupahjol_original_street.png" />
+    <Content Include="images\krakkar\hlaupahjol_pink.png" />
+    <Content Include="images\krakkar\hlaupahjol_reflexBlue.png" />
+    <Content Include="images\krakkar\hlaupahjol_skyBlue.png" />
     <Content Include="images\krakkar\korfur_frozen.png" />
     <Content Include="images\krakkar\korfur_princess.png" />
     <Content Include="images\lasar\las_med_lykil.png" />
@@ -319,9 +324,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Hjol\karlaHjol.cshtml" />
-    <Content Include="Views\Hjol\kvennahjol.cshtml" />
-    <Content Include="Views\Hjol\barnaHjol.cshtml" />
     <Content Include="Views\kertastjakar\kertastjakar.cshtml" />
     <Content Include="Views\sagan\um.cshtml" />
     <Content Include="Views\aukahlutir\auka_varahlutir.cshtml" />
@@ -350,6 +352,7 @@
     <Content Include="Views\varahlutir\gjardir.cshtml" />
     <Content Include="Views\varahlutir\index.cshtml" />
     <Content Include="Views\aukahlutir\index.cshtml" />
+    <Content Include="Views\Hjol\fullordinshjol.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\karlaHjol\" />

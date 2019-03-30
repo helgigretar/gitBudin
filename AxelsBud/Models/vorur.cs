@@ -12,5 +12,8 @@ namespace AxelsBud.Models
         public string [] lysing { get; set; }
         public string audkenni { get; set; }
         public string verd { get; set; }
+        public string [] imgs { get; set; }
+        public string [] links { get; set; }
+        public bool multipleLinks { get; set; }
     }
 }
