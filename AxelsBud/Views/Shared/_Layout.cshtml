@@ -7,78 +7,78 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<link href="~/MyCss/frontpage.css" rel="stylesheet" type="text/css"/>
+<link href="~/MyCss/frontpage.css" rel="stylesheet" type="text/css" />
+<link href="~/MyCss/hedder.css" rel="stylesheet" type="text/css" />
+
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="hausmyndaTextContainer">
-        <div class="hausMyndir" id="myndir">
-            <div class="AxelsBudTextinn">@Html.ActionLink("Axelsbúð", "", "")</div>
-            <img src="~/images/axelsbud1.png" height="150" class="hausMynd" />
-            <img src="~/images/axelsbud2.png" height="150" class="hausMynd" />
-            <img src="~/images/frontTester.png" height="150" class="hausMynd" />
+            @*<div class="hausMyndir" id="myndir">
+                    <div class="AxelsBudTextinn">@Html.ActionLink("Axelsbúð", "", "")</div>
+                    <img src="~/images/axelsbud1.png" height="150" class="hausMynd" />
+                    <img src="~/images/axelsbud2.png" height="150" class="hausMynd" />
+                    <img src="~/images/frontTester.png" height="150" class="hausMynd" />
+                </div>*@
         </div>
-        </div>
-        <div class="container" id="myDIV">
+        <div class="nav_wrapper" id="myDIV">
             <div class="navbar-header">
+               @Html.ActionLink("Axelsbúð", "Index", "Home", new { area = "" }, new { @class = " nav_button nav_button_home" })
+            </div>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Axelsbúð", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a class="dropbtn">Reiðhjól</a>
-                        <div class="dropdown-content">
-                            <div>@Html.ActionLink("barnahjól", "", "barnahjol")</div>
-                            <div>@Html.ActionLink("karlmannshjól", "", "karlahjol")</div>
-                            <div>@Html.ActionLink("kvennmanshjól", "", "kvennahjol")</div>
+                <ul class="navbar-nav">
+                    <li class="dropdown nav_button">
+                        <a class="">Reiðhjól</a>
+                        <div class="dropdown_content">
+                            <div>@Html.ActionLink("Barnahjól", "", "barnahjol")</div>
+                            <div>@Html.ActionLink("Karlmannshjól", "", "karlahjol")</div>
+                            <div>@Html.ActionLink("Kvennmanshjól", "", "kvennahjol")</div>
                         </div>
                     </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">aukahlutir </a>
-                        <div class="dropdown-content">
-                            <div>@Html.ActionLink("bjöllur", "", "bjollur")</div>
-                            <div>@Html.ActionLink("bretti", "", "bretti")</div>
-                            <div>@Html.ActionLink("bögglaberar", "", "bogglaberar")</div>
-                            <div>@Html.ActionLink("hraðamælar", "", "hradamaelar")</div>
-                            <div>@Html.ActionLink("körfur", "", "korfur")</div>
-                            <div>@Html.ActionLink("ljós", "", "ljos")</div>
-                            <div>@Html.ActionLink("pumpur", "", "pumpur")</div>
-                            <div>@Html.ActionLink("standarar", "", "standarar")</div>
-                            <div>@Html.ActionLink("stýrisendar", "", "styrisendar")</div>
-                            <div>@Html.ActionLink("vatnsflöskur og statíf", "", "vatnsfloskur_statif")</div>
-                            <div>@Html.ActionLink("hnakkar", "", "hnakkar")</div>
-                            <div>@Html.ActionLink("lásar", "", "lasar")</div>
+                    <li class="dropdown nav_button">
+                        <a class="">Aukahlutir</a>
+                        <div class="dropdown_content">
+                            <div>@Html.ActionLink("Bjöllur", "", "bjollur")</div>
+                            <div>@Html.ActionLink("Bretti", "", "bretti")</div>
+                            <div>@Html.ActionLink("Bögglaberar", "", "bogglaberar")</div>
+                            <div>@Html.ActionLink("Hraðamælar", "", "hradamaelar")</div>
+                            <div>@Html.ActionLink("Körfur", "", "korfur")</div>
+                            <div>@Html.ActionLink("Ljós", "", "ljos")</div>
+                            <div>@Html.ActionLink("Pumpur", "", "pumpur")</div>
+                            <div>@Html.ActionLink("Standarar", "", "standarar")</div>
+                            <div>@Html.ActionLink("Stýrisendar", "", "styrisendar")</div>
+                            <div>@Html.ActionLink("Vatnsflöskur og statíf", "", "vatnsfloskur_statif")</div>
+                            <div>@Html.ActionLink("Hnakkar", "", "hnakkar")</div>
+                            <div>@Html.ActionLink("Lásar", "", "lasar")</div>
                         </div>
                     </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">varahlutir </a>
-                        <div class="dropdown-content">
-                            <div>@Html.ActionLink("bremsubúnaður", "", "Home")</div>
-                            <div>@Html.ActionLink("gírskiptar", "", "Home")</div>
-                            <div>@Html.ActionLink("hnakkar", "", "Home")</div>
-                            <div>@Html.ActionLink("keðju og gírhlífar", "", "Home")</div>
-                            <div>@Html.ActionLink("gjarðir", "", "Home")</div>
-                            <div>@Html.ActionLink("stýrisendar", "", "Home")</div>
-                            <div>@Html.ActionLink("vírar og barkar", "", "Home")</div>
-                            <div>@Html.ActionLink("ýmislegt", "", "Home")</div>
+                    <li class="dropdown nav_button">
+                        <a class="">Varahlutir</a>
+                        <div class="dropdown_content">
+                            <div>@Html.ActionLink("Bremsubúnaður", "", "Home")</div>
+                            <div>@Html.ActionLink("Gírskiptar", "", "Home")</div>
+                            <div>@Html.ActionLink("Hnakkar", "", "Home")</div>
+                            <div>@Html.ActionLink("Keðju og gírhlífar", "", "Home")</div>
+                            <div>@Html.ActionLink("Gjarðir", "", "Home")</div>
+                            <div>@Html.ActionLink("Stýrisendar", "", "Home")</div>
+                            <div>@Html.ActionLink("Vírar og barkar", "", "Home")</div>
+                            <div>@Html.ActionLink("Ýmislegt", "", "Home")</div>
                         </div>
                     </li>
-                    <li>@Html.ActionLink("Krakkarnir", "", "krakkarnir")</li>
-                    <li>@Html.ActionLink("Hjólastandar", "", "hjolastandar")</li>
-                    <li>@Html.ActionLink("setja hjól í vðgerð", "", "vidgerd")</li>
-                    <li>@Html.ActionLink("Kertastjakar", "", "kertastjakar")</li>
-                    <li>@Html.ActionLink("Sagan um Axelsbúð", "", "umAxelsbud")</li>
+                    <li class="nav_button">@Html.ActionLink("Krakkarnir", "", "krakkarnir")</li>
+                    <li class="nav_button">@Html.ActionLink("Hjólastandar", "", "hjolastandar")</li>
+                    <li class="nav_button">@Html.ActionLink("Hjóla viðgerðir", "", "vidgerd")</li>
+                    <li class="nav_button">@Html.ActionLink("Kertastjakar", "", "kertastjakar")</li>
+                    <li class="nav_button">@Html.ActionLink("Um Axelsbúð", "", "umAxelsbud")</li>
                 </ul>
             </div>
         </div>
     </div>
-    <br class="spacing" />
-    <br class="spacing" />
-    <br class="spacing" />
+
     <div class="container body-content">
         @RenderBody()
         <hr />
