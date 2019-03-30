@@ -34,6 +34,31 @@
                         }
                     }
                 </ul>
+                @{ 
+                    if(Model.multipleLinks == true)
+                    {
+                        <div class="row">
+                            <h3>Valmöguleikar</h3>
+
+                            @{
+                                int counter = 0;
+                                foreach (var item in Model.imgs)
+                                {
+                                    if(item!= null)
+                                    {
+                                        <a href="vorur?@Model.links[counter]">
+                                        <img  src="~/images/@(item).png"/>
+
+                                        </a>
+                                    }
+                                    counter = counter + 1;
+
+                                }
+                            }
+
+                        </div>
+                    }
+                }
             </div>
         </div>
         <div class="breaker"></div>

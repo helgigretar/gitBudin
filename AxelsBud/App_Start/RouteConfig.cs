@@ -104,8 +104,8 @@ namespace AxelsBud
             new { controller = "vidgerd", action = "vidgerd" });
 
             routes.MapRoute(
-            "heimildamynd",
-            "heimildamynd",
+            "heimildarmynd",
+            "heimildarmynd",
             new { controller = "sagan", action = "heimildamynd" });
 
             routes.MapRoute(
@@ -142,6 +142,11 @@ namespace AxelsBud
             "varahlutir_kedjur_girhlifar",
             "varahlutir/kedjur_girhlifar",
             new { controller = "varahlutir", action = "kedjur_girhlifar" });
+
+            routes.MapRoute(
+            "fullordinshjol",
+            "fullordinshjol",
+            new { controller = "Hjol", action = "fullordinshjol" });
 
 
             routes.MapRoute(
