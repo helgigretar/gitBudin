@@ -23,7 +23,21 @@
         </div>
         <div class="vorurnar">
             <div class="vorurnar_title"> Bremsubúnaður</div>
-            
+            @{
+                for (int count = 0; count < Model.maxer; count++)
+                {
+                    <div class="col-md-4" target="vara">
+                        <a href="/vorur?@(Model.audkenin[@count])">
+                            <div class="voruContainer">
+                                <p class="voruFyrirsogn">@Model.nofn[@count]</p>
+                                <img src="~/images/@(Model.myndir[@count]).png" width="200" height="200" />
+                                <p class="price"> @Model.verdin[@count] kr.</p>
+                            </div>
+                        </a>
+                    </div>
+                }
+
+            }
 
         </div>
     </div>

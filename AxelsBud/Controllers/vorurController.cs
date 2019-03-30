@@ -43,6 +43,8 @@ namespace AxelsBud.Controllers
             LoadJson("vatnsfloskur_statif", vara);
             LoadJson("lasar", vara);
             LoadJson("kertastjakar", vara);
+            LoadJson("girskiptar", vara);
+            LoadJson("bremsubunadur", vara);
             //LoadJson("hnakkar", vara);
             LoadJson("krakkar", vara);
             while (names== null)

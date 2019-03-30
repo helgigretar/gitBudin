@@ -1,0 +1,73 @@
+﻿[
+  {
+    "Name": "Gírhlif á stell fyrir Börn",
+    "verd": "990",
+    "mynd": "kedjur_girhlifar/girhlif_stell_barna",
+    "lysing": "Passar á öll Trek barnahjól # Sterk grind sem fer yfir og verndar afturskiptin #",
+    "ID": "kedjur_girhlifar_0"
+  },
+  {
+    "Name": "Gírhlíf á stell fyrir fullorðna",
+    "verd": "990",
+    "mynd": "kedjur_girhlifar/girhlif_stell_fullordins",
+    "lysing": "",
+    "ID": "kedjur_girhlifar_1"
+  },
+  {
+    "Name": "Gírhlíf með grind",
+    "verd": "900",
+    "mynd": "kedjur_girhlifar/girhlif_grind",
+    "lysing": " Enginn nánari lýsing #",
+    "ID": "kedjur_girhlifar_2"
+  },
+  {
+    "Name": "Gírhlíf á öxul",
+    "verd": "690",
+    "mynd": "kedjur_girhlifar/girhlif_oxul",
+    "lysing": " Enginn nánári lýsing #",
+    "ID": "kedjur_girhlifar_3"
+  },
+  {
+    "Name": "Keðjuhlífar 48T 323",
+    "verd": "2.790",
+    "mynd": "kedjur_girhlifar/kedjuhlifar_48T_323",
+    "lysing": "Fyrir Shimano sveifsett og legur allt frá 1992 # Passar á sveifasett sem eru 48 tennur á stærsta tannhjóli # Mjög gott plast",
+    "ID": "kedjur_girhlifar_4"
+  },
+  {
+    "Name": "Keðjuhlífar 48T Kúptar 326",
+    "verd": "2.990",
+    "mynd": "kedjur_girhlifar/kedjuhlifar_48T_kuptar_326",
+    "lysing": " Fyrir Shimano sveifasett og leggur allt frá 2003 # Passar á sveifasett sem eru 48 tennur á stærsta tannhjóli # Mjög gott plast",
+    "ID": "kedjur_girhlifar_5"
+  },
+  {
+    "Name": "Keðjuhlífar 46-48T SW-720",
+    "verd": "1.990",
+    "mynd": "kedjur_girhlifar/kedjuhlifar_46_48T_sw_720",
+    "lysing": " Passar á sveifasett sem eru 46-48 tennur á stærsta tannhjóli # ",
+    "ID": "kedjur_girhlifar_5"
+  },
+  {
+    "Name": "Keðjuhlífar 42-44T SW-719",
+    "verd": "1.990",
+    "mynd": "kedjur_girhlifar/kedjuhlifar_42_44T_SW_719",
+    "lysing": " Passar á sveifasett sem eru 42-44 tennur á stærsta tannhjóli ",
+    "ID": "kedjur_girhlifar_6"
+  },
+  {
+    "Name": "Keðjuhlífar chinglider",
+    "verd": "5.990",
+    "mynd": "kedjur_girhlifar/kedjuhlifar_chinglider",
+    "lysing": "Enginn nánari lýsing # ",
+    "ID": "kedjur_girhlifar_7"
+  },
+  {
+    "Name": "Keðjuhlífar 44T kúptar 325",
+    "verd": "2.990",
+    "mynd": "kedjur_girhlifar/kedjuhlifar_44T_kuptar_325",
+    "lysing": " Fyrir sveifasett og legur allt frá 2003 # Passar á sveifasett sem eru 44 tennur á stærsta tannhjóli # Mjög gott plast ",
+    "ID": "kedjur_girhlifar_6"
+  }
+
+]
