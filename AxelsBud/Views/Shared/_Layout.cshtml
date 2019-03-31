@@ -20,7 +20,7 @@
 <link href="~/MyCss/hedder.css" rel="stylesheet" type="text/css" />
 
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="nav_wrapper" @*class="navbar-inverse navbar-fixed-top"*@>
         <div class="hausmyndaTextContainer">
             @*<div class="hausMyndir" id="myndir">
                     <div class="AxelsBudTextinn">@Html.ActionLink("Axelsbúð", "", "")</div>
@@ -29,17 +29,20 @@
                     <img src="~/images/frontTester.png" height="150" class="hausMynd" />
                 </div>*@
         </div>
-        <div class="nav_wrapper" id="myDIV">
+        <div class="nav_bar" id="myDIV">
+            <div class="nav_head_burger_wrapper">
+
             <div class="navbar-header">
                @Html.ActionLink("Axelsbúð", "Index", "Home", new { area = "" }, new { @class = " nav_button nav_button_home" })
             </div>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="nav_hamburger"  data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-            <div class="navbar-collapse collapse">
-                <ul class="navbar-nav">
+            </div>
+            <div class="nav_links navbar-collapse collapse">
+                <ul class="nav_links_buttons">
                     <li class="nav_button">@Html.ActionLink("Reiðhjól", "", "fullordinshjol")</li>
                     <li class="dropdown nav_button">
                         <a class="" href="/aukahlutir">Aukahlutir</a>
