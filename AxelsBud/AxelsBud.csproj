@@ -275,6 +275,7 @@
     <Content Include="images\vatnsfloskur_statif\vatnsfloskustatíf.png" />
     <Content Include="MyCss\frontPage.css" />
     <Content Include="MyCss\hedder.css" />
+    <Content Include="MyCss\heimildamyndir.css" />
     <Content Include="MyCss\hjolaStandar.css" />
     <Content Include="MyCss\hjolin.css" />
     <Content Include="MyCss\krakkar.css" />
@@ -350,7 +351,6 @@
     <Content Include="Views\krakkarnir\krakkar.cshtml" />
     <Content Include="Views\vidgerd\vidgerd.cshtml" />
     <Content Include="Views\sagan\heimildamynd.cshtml" />
-    <Content Include="Views\sagan\opnunartimar.cshtml" />
     <Content Include="Views\varahlutir\bremsubunadur.cshtml" />
     <Content Include="Views\varahlutir\girskiptar.cshtml" />
     <Content Include="Views\varahlutir\kedjur_girhlifar.cshtml" />
