@@ -6,7 +6,7 @@ body {
 
 .nav_wrapper {
     width: 100%;
-    background: gray;
+    background: #333;
     margin: 0 auto;
     position: fixed;
     right: 0;
@@ -29,8 +29,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    /*padding: 0 2rem;*/
-    margin: 0 auto;
+    margin: 0;
     width: 100%;
 }
 
@@ -41,6 +40,7 @@ body {
     border: 1px solid #9d9d9d;
     border-radius: 4px;
     cursor: pointer;
+    /*margin: 0.5rem 0;*/
 }
 
 .nav_hamburger:hover {
@@ -60,10 +60,12 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
     color: #9d9d9d;
-    text-decoration:none;
-    position:relative;
+    text-decoration: none;
+    position: relative;
     display: inline-block;
     padding: 1rem;
+    width: 25%;
+    text-align: center;
 }
 
 .nav_button:hover {
@@ -123,9 +125,26 @@ body {
 }
 
 .nav_button_home {
-    font-size:2rem;
-    padding: 0 1rem;
+    font-size: 2rem;
+    margin: 0.1rem;
+    background-image: url(/images/logo.png);
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+    width: 100% !important;
+    border-radius: 4px;
+    padding: 1rem !important;
 }
+
+.nav_button_home:hover {
+    color: transparent;
+    background-color: #9d9d9d;
+}
+
+.nav_logo_wrapper{
+    padding: 0.2rem;
+}
+
 
 @media (min-width: 1000px) {
     .nav_links {
@@ -144,5 +163,14 @@ body {
     .nav_bar{
         flex-direction:row;
     }
+    .nav_button {
+        width: auto;
+        padding: 2rem 1rem;
+    }
+}
 
+@media  (max-width: 600px) {
+    .nav_button {
+        width: 50%;
+    }
 }
