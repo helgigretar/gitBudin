@@ -90,7 +90,7 @@ namespace AxelsBud
             new { controller = "aukahlutir", action = "lasar" });
             routes.MapRoute(
             "hjolastandar",
-            "aukahlutir/hjolastandar",
+            "hjolastandar",
             new { controller = "hjolastandar", action = "hjolastandar" });
 
             routes.MapRoute(

@@ -33,7 +33,7 @@
         <div class="vorurnar">
             <div class="vorurnar_title"> Allir aukahlutir</div>
             @{ 
-               for(int count =0;count<=Model.maxer;count++)
+               for(int count =0;count<Model.maxer;count++)
                 {
                     <div class="col-md-4" target="vara">
                         <a href="/vorur?@(Model.audkenin[@count])">

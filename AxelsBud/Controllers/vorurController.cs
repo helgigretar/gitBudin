@@ -59,6 +59,26 @@ namespace AxelsBud.Controllers
                 };
                 return View(res);
             }
+            //if körfur hjá rökkum
+            if(vara == "krakkar_6" | vara == "krakkar_7")
+            {
+                LoadJsonMultiple("krakkar", "krakkar_6", 0);
+                LoadJsonMultiple("krakkar", "krakkar_7", 1);
+                LoadJson("krakkar", vara);
+                var res = new vorur()
+                {
+                    verd = verd,
+                    audkenni = ids,
+                    lysing = lysing,
+                    mynd = mynd,
+                    nafn = names,
+                    imgs = imgSrc,
+                    links = linkshref,
+                    multipleLinks = true
+
+                };
+                return View(res);
+            }
             //if hlaupahjól hjá krökkum
             if(vara == "krakkar_8" || vara == "krakkar_9" || vara == "krakkar_10" || vara == "krakkar_11" || vara == "krakkar_12" || vara == "krakkar_13" )
             {
