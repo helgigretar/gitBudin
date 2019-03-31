@@ -1,5 +1,22 @@
-﻿.nav_wrapper {
+﻿
+body {
+    padding: 0 !important;
+}
+
+
+.nav_wrapper {
+    width: 100%;
+    background: gray;
+    margin: 0 auto;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.nav_bar {
     display: flex;
+    flex-direction:column;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
@@ -7,6 +24,37 @@
     margin: 0 auto;
 }
 
+.nav_head_burger_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    /*padding: 0 2rem;*/
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nav_hamburger {
+    display: block;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px solid #9d9d9d;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav_hamburger:hover {
+    background-color: #9d9d9d;
+}
+
+.nav_hamburger span {
+    display: block;
+    width: 2.5rem;
+    height: 2px;
+    margin: 0.5rem 0;
+    border-radius: 1px;
+    background: #fff;
+}
 
 .nav_button {
     font-size: 1.5rem;
@@ -28,33 +76,73 @@
     display: block;
 }
 
+.nav_links {
+    /*Þarf að losna við .navbar-collapse.in */
+    overflow-y: visible !important;
+}
+
+.nav_links_buttons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .dropdown_content {
     display: none;
     position: absolute;
     background-color: #fff;
-    /*min-width: 160px;*/
-    white-space: nowrap;
+    text-align: center;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1
+    z-index: 1;
+    left: -2rem;
+    top: 100%;
+    right: -2rem;
+    /*margin-top: 1.3rem;*/
 }
 
 .dropdown_content a {
     color: black;
-    padding :0.8rem 1.5rem ;
+    padding :0.8rem;
     text-decoration: none;
     display: block;
 }
 
 .dropdown_content a:hover {
     background-color: #c8c8c8;
-    /*color: #fff;*/
 }
 
 
 .nav_button > a {
-    text-decoration:none;
+    text-decoration: none;
+    color: #9d9d9d;
+}
+.nav_button > a:hover {
+    color: #fff;
 }
 
 .nav_button_home {
     font-size:2rem;
-} 
+    padding: 0 1rem;
+}
+
+@media (min-width: 1000px) {
+    .nav_links {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+        border-top: 1px solid transparent;
+    }
+    .nav_head_burger_wrapper {
+        width:auto;
+    }
+    .nav_hamburger {
+        display:none;
+    }
+    .nav_bar{
+        flex-direction:row;
+    }
+
+}
