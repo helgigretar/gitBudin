@@ -6,32 +6,29 @@
     <link href="~/MyCss/heimildamyndir.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="row">
-        <br />
-        <br />
-        <h1 class="heimdarmynd_center" >Heimildarmyndir um Axelsbúð</h1>
-        <br />
-        <div class="heimdarmynd_center">
+    <div class="row doc_wrapper">
+        <h1 class="doc_heading">Heimildarmynd um Axelsbúð</h1>
+        <div class="doc_text">
             <p>Vorið 2005 var Axelsbúð á Akranesi lokað eftir áratuga rekstur. Þórður Ólafsson tók hús á Axel Gústafssyni rétt fyrir lokun og fór yfir sögu verslunarinnar. </p>
-            <ul>
-            <ol>Kvikmyndin er í tveimur hlutum, 28 mín. alls:</ol>
-            <ol>Fyrri hluti u.þ.b. 15 mín.</ol>
-            <ol>Seinni hluti 13 mín.</ol>
-            </ul>
-            <h3 class="heimdarmynd_center">Fyrri hluti</h3>
-            <video width="100%" controls>
+            <div class="doc_text_info">
+                <p>Kvikmyndin er í tveimur hlutum, 28 mínútur alls:</p>
+                <p>Fyrri hluti um 15 mín.</p>
+                <p>Seinni hluti 13 mín.</p>
+            </div>
+            
+        </div>
+        <h3 class="doc_heading doc_video_heding">Fyrri hluti</h3>
+        <video controls class="doc_video">
             <source src="~/videos/fyrri.mp4" type="video/mp4">
             <source src="~/videos/fyrri.mp4" type="video/ogg">
             Your browser does not support HTML5 video.
-            </video>
-            <h3 class="heimdarmynd_center">Seinni hluti</h3>
-            <video width="100%" controls>
+        </video>
+        <h3 class="doc_heading doc_video_heding">Seinni hluti</h3>
+        <video controls class="doc_video">
             <source src="~/videos/seinni.mp4" type="video/mp4">
             <source src="~/videos/seinni.mp4" type="video/ogg">
             Your browser does not support HTML5 video.
-            </video>
-
-        </div>
+        </video>
 
     </div>
 </body>
