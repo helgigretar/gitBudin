@@ -80,7 +80,6 @@
                         <div class="dropdown_content">
                             <div>@Html.ActionLink("Sagan um Axelsbúð", "", "umAxelsbud")</div>
                             <div>@Html.ActionLink("Heimildarmynd", "", "heimildarmynd")</div>
-                            <div>@Html.ActionLink("Opnunartímar", "", "opnunartimar")</div>
                         </div>
                     </li>
                 </ul>
@@ -126,19 +125,7 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
-<script>
-    window.onscroll = function () { myFunction() };
-    function myFunction() {
-        if (window.scrollY > 1) {
-            //var el = document.getElementById('myndir');
-            //el.remove(); // Removes the div with the 'div-02' id
-            var a = document.getElementById('myndir').style.display = "none";
-        } else {
-            var a = document.getElementById('myndir').style.display = "";
-
-        }
-
-    }
+<script>    
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
