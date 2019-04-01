@@ -4,6 +4,55 @@ body {
 }
 
 
+.head_wrapper {
+    width: 100%;
+    height: 40vh;
+    padding-top: 60px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.head_background {
+    background-image: url(/images/hedderStock2crop2.jpg);
+    position: absolute;
+    background-size: cover;
+    background-position-y: center;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(2px);
+}
+
+.head_container {
+    display: flex;
+    height: 100%;
+    /*padding-top: 10vh;*/
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.head_img_frame {
+    height: 25vh;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    border: 3px #333 solid;
+    box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.5), 0px 0px 10px 0px rgba(0,0,0,0.5) inset;
+    animation: fading 10s infinite;
+}
+
+
+
+.head_container img {
+    height: 100%;
+    display: block;
+}
+
 .nav_wrapper {
     width: 100%;
     background: #333;
@@ -194,6 +243,29 @@ body {
     margin: 0.5rem;
 }
 
+@media (min-width: 1200px) {
+    .head_img_frame {
+        display: block !important;
+        animation: none;
+    }
+
+    .head_container div:nth-child(1) {
+        height: 23vh;
+    }
+
+    .head_container div:nth-child(2) {
+        margin-left: 6rem;
+        margin-bottom: 6rem;
+        height: 20vh;
+    }
+
+    .head_container div:nth-child(3) {
+        margin-top: 3rem;
+        margin-left: 3rem;
+        height: 22vh;
+    }
+}
+
 @media (min-width: 1000px) {
     .nav_links {
         display: block !important;
@@ -228,6 +300,24 @@ body {
 @media  (max-width: 400px) {
     .footer_element {
         width: 100%;
+    }
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
