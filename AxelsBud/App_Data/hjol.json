@@ -31,46 +31,74 @@
     "Name": "Marlin 5",
     "verd": "84.990",
     "mynd": "hjol/bike_marlin5",
-    "lysing": "Alpha Gold álstell, Dup Trap S möguleiki # Bontrager AT-750 tvöfaldar gerðir # 24 gírar # Shimano Altus afturskiptir # Fjöðrun á hnakkpípu # Bontrager H5 dekk, 700X45 #",
+    "lysing": "Alpha Silver álstell # 21 gír # Dempari að framan 100mm með vökvalæsingu # Uppærsla frá TREK Marlin 4 # 100mm demparagafall # Bontrager Connection tvöfaldar gjarðir # Tektro M285 vökvadiskabremsur",
     "ID": "hjol_4"
   },
   {
     "Name": "Marlin 5",
     "verd": "84.990",
     "mynd": "hjol/bike_marlin5",
-    "lysing": "Alpha Gold álstell, Dup Trap S möguleiki # Bontrager AT-750 tvöfaldar gerðir # 24 gírar # Shimano Altus afturskiptir # Fjöðrun á hnakkpípu # Bontrager H5 dekk, 700X45 #",
+    "lysing": "Alpha Silver álstell # 21 gír # Dempari að framan 100mm með vökvalæsingu # Uppærsla frá TREK Marlin 4 # 100mm demparagafall # Bontrager Connection tvöfaldar gjarðir # Tektro M285 vökvadiskabremsur",
     "ID": "hjol_5"
   },
   {
     "Name": "Marlin 5 13,5/27,5'' ",
     "verd": "84.990",
     "mynd": "hjol/bike_marlin5",
-    "lysing": "Alpha Gold álstell, Dup Trap S möguleiki # Bontrager AT-750 tvöfaldar gerðir # 24 gírar # Shimano Altus afturskiptir # Fjöðrun á hnakkpípu # Bontrager H5 dekk, 700X45 #",
+    "lysing": "Alpha Silver álstell # 21 gír # Dempari að framan 100mm með vökvalæsingu # Uppærsla frá TREK Marlin 4 # 100mm demparagafall # Bontrager Connection tvöfaldar gjarðir # Tektro M285 vökvadiskabremsur",
     "ID": "hjol_6"
   },
   {
     "Name": "Marlin 5 15,5/27,5'' ",
     "verd": "84.990",
     "mynd": "hjol/bike_marlin5",
-    "lysing": "Alpha Gold álstell, Dup Trap S möguleiki # Bontrager AT-750 tvöfaldar gerðir # 24 gírar # Shimano Altus afturskiptir # Fjöðrun á hnakkpípu # Bontrager H5 dekk, 700X45 #",
+    "lysing": "Alpha Silver álstell # 21 gír # Dempari að framan 100mm með vökvalæsingu # Uppærsla frá TREK Marlin 4 # 100mm demparagafall # Bontrager Connection tvöfaldar gjarðir # Tektro M285 vökvadiskabremsur",
     "ID": "hjol_7"
   },
   {
     "Name": "Marlin 5 17,5/27,5'' ",
     "verd": "84.990",
     "mynd": "hjol/bike_marlin5",
-    "lysing": "Alpha Gold álstell, Dup Trap S möguleiki # Bontrager AT-750 tvöfaldar gerðir # 24 gírar # Shimano Altus afturskiptir # Fjöðrun á hnakkpípu # Bontrager H5 dekk, 700X45 #",
+    "lysing": "Alpha Silver álstell # 21 gír # Dempari að framan 100mm með vökvalæsingu # Uppærsla frá TREK Marlin 4 # 100mm demparagafall # Bontrager Connection tvöfaldar gjarðir # Tektro M285 vökvadiskabremsur",
     "ID": "hjol_8"
   },
   {
     "Name": "Marlin 5 19,5/227,5'' ",
     "verd": "84.990",
     "mynd": "hjol/bike_marlin5",
-    "lysing": "Alpha Gold álstell, Dup Trap S möguleiki # Bontrager AT-750 tvöfaldar gerðir # 24 gírar # Shimano Altus afturskiptir # Fjöðrun á hnakkpípu # Bontrager H5 dekk, 700X45 #",
+    "lysing": "Alpha Silver álstell # 21 gír # Dempari að framan 100mm með vökvalæsingu # Uppærsla frá TREK Marlin 4 # 100mm demparagafall # Bontrager Connection tvöfaldar gjarðir # Tektro M285 vökvadiskabremsur",
     "ID": "hjol_9"
   },
   {
-    "Name": "Skye",
+    "Name": "Skye Dömur",
+    "verd": "84.990",
+    "mynd": "hjol/bike_skye",
+    "lysing": "WSD Alpha Silver álstell # 21 gír # Dempari að framan 75mm # Víradiskabremsur",
+    "ID": "hjol_10"
+  },
+  {
+    "Name": "Skye Dömur Matte Silver 15,5/27,5''",
+    "verd": "84.990",
+    "mynd": "hjol/bike_skye",
+    "lysing": "WSD Alpha Silver álstell # 21 gír # Dempari að framan 75mm # Víradiskabremsur",
+    "ID": "hjol_10"
+  },
+  {
+    "Name": "Skye Dömur Matte Silver 17/29''",
+    "verd": "84.990",
+    "mynd": "hjol/bike_skye",
+    "lysing": "WSD Alpha Silver álstell # 21 gír # Dempari að framan 75mm # Víradiskabremsur",
+    "ID": "hjol_10"
+  },
+  {
+    "Name": "Skye S ",
+    "verd": "84.990",
+    "mynd": "hjol/bike_skye",
+    "lysing": "Alpha Gold álstell, Dup Trap S möguleiki # Bontrager AT-750 tvöfaldar gerðir # 24 gírar # Shimano Altus afturskiptir # Fjöðrun á hnakkpípu # Bontrager H5 dekk, 700X45 #",
+    "ID": "hjol_10"
+  },
+  {
+    "Name": "Skye S 15,5/27,5'' Matta Charcoal",
     "verd": "84.990",
     "mynd": "hjol/bike_skye",
     "lysing": "Alpha Gold álstell, Dup Trap S möguleiki # Bontrager AT-750 tvöfaldar gerðir # 24 gírar # Shimano Altus afturskiptir # Fjöðrun á hnakkpípu # Bontrager H5 dekk, 700X45 #",
