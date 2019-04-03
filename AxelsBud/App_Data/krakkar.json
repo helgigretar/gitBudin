@@ -89,5 +89,56 @@
     "mynd": "krakkar/hlaupahjol_skyBlue",
     "lysing": "Létta klasskíska hlaupahjólið sem auðvelt er að leggja saman $ ólin fylgir $ Fótasvæði 510x100 mm $ Stillanlegt stýri # vegur 2780 grömm $ Hámarksþyngd á hjólið er 100kg",
     "ID": "krakkar_13"
+  },
+  {
+    "Name": "Winther þríhjól",
+    "verd": "16.990",
+    "mynd": "krakkar/hlaupahjol_skyBlue",
+    "lysing": "Létta klasskíska hlaupahjólið sem auðvelt er að leggja saman $ ólin fylgir $ Fótasvæði 510x100 mm $ Stillanlegt stýri # vegur 2780 grömm $ Hámarksþyngd á hjólið er 100kg",
+    "ID": "krakkar_13"
+  },
+  {
+    "Name": "Þríhjól",
+    "verd": "84.990",
+    "mynd": "hjol/thrihjol",
+    "lysing": "Þessi klassísku # Dönsk gæði síðan 1935",
+    "ID": "krakkar_14"
+  },
+  {
+    "Name": "Svart Þríhjól",
+    "verd": "84.990",
+    "mynd": "hjol/thrihjol_black",
+    "lysing": "Þessi klassísku # Dönsk gæði síðan 1935",
+    "ID": "krakkar_15"
+  },
+  {
+    "Name": "Grænt Þríhjól",
+    "verd": "84.990",
+    "mynd": "hjol/thrihjol_green",
+    "lysing": "Þessi klassísku # Dönsk gæði síðan 1935",
+    "ID": "krakkar_16"
+  },
+  {
+    "Name": "Blátt Þríhjól",
+    "verd": "84.990",
+    "mynd": "hjol/thrihjol_blue",
+    "lysing": "Þessi klassísku # Dönsk gæði síðan 1935",
+    "ID": "krakkar_17"
+  },
+  {
+    "Name": "Bleikt Þríhjól",
+    "verd": "84.990",
+    "mynd": "hjol/thrihjol_pink",
+    "lysing": "Þessi klassísku # Dönsk gæði síðan 1935",
+    "ID": "krakkar_18"
+  },
+  {
+    "Name": "Gulur Þríhjól",
+    "verd": "84.990",
+    "mynd": "hjol/thrihjol",
+    "lysing": "Þessi klassísku # Dönsk gæði síðan 1935",
+    "ID": "krakkar_19"
   }
+
+
 ]
