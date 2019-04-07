@@ -37,7 +37,7 @@ body {
 
 
 .head_img_frame {
-    height: 25vh;
+    height: 23vh;
     background-color: white;
     padding: 15px;
     display: flex;
@@ -87,14 +87,14 @@ body {
     display: block;
     padding: 0.5rem;
     background-color: transparent;
-    border: 1px solid #9d9d9d;
+    border: 2px solid #9d9d9d;
     border-radius: 4px;
     cursor: pointer;
     /*margin: 0.5rem 0;*/
 }
 
 .nav_hamburger:hover {
-    background-color: #9d9d9d;
+    border: 2px #FCCC01 solid;
 }
 
 .nav_hamburger span {
@@ -103,7 +103,7 @@ body {
     height: 2px;
     margin: 0.5rem 0;
     border-radius: 1px;
-    background: #fff;
+    background: #9d9d9d;
 }
 
 .nav_button {
@@ -118,10 +118,10 @@ body {
     text-align: center;
 }
 
-.nav_button:hover {
-    color: #fff;
+.nav_button:hover  {
+    /*color: #fff;
     background-color: transparent;
-    text-decoration: none;
+    text-decoration: none;*/
 }
 
 .nav_button:hover > .dropdown_content {
@@ -167,10 +167,18 @@ body {
 
 .nav_button > a {
     text-decoration: none;
+    color: transparent;
+}
+
+/*Fix for dropdown transition*/
+.in > ul > li > a {
     color: #9d9d9d;
 }
-.nav_button > a:hover {
+
+
+.nav_button:hover > a{
     color: #fff;
+    border-bottom: 1px #FCCC01 solid;
 }
 
 .nav_button_home {
@@ -181,18 +189,24 @@ body {
     background-size: cover;
     color: transparent;
     width: 100% !important;
-    border-radius: 4px;
     padding: 1rem !important;
 }
 
 .nav_button_home:hover {
     color: transparent;
-    background-color: #9d9d9d;
+    /*background-color: #9d9d9d;*/
 }
 
-.nav_logo_wrapper{
+.nav_logo_wrapper {
     padding: 0.2rem;
+    margin: 0.2rem;
+    border-bottom: 2px #333 solid;
 }
+
+.nav_logo_wrapper:hover {
+    border-bottom: 2px #FCCC01 solid;
+}
+
 
 
 .footer_wrapper {
@@ -285,7 +299,10 @@ body {
     }
     .nav_button {
         width: auto;
-        padding: 2rem 1rem;
+        padding: 2rem 1rem
+    }
+    .nav_button > a {
+        color: #9d9d9d;
     }
     .footer_element {
         width: auto;
@@ -308,11 +325,11 @@ body {
         opacity: 0
     }
 
-    20% {
+    25% {
         opacity: 1;
     }
 
-    80% {
+    75% {
         opacity: 1;
     }
 
