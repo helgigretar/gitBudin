@@ -175,9 +175,12 @@
     <Content Include="images\bogglaberar\bögglaberi_disc_large.png" />
     <Content Include="images\bogglaberar\bögglageri_deluxe.png" />
     <Content Include="images\bremsubunadur\bremsuarmar_v_bremsu_sett.png" />
+    <Content Include="images\bremsubunadur\bremsubarki.png" />
     <Content Include="images\bremsubunadur\bremsudiskur_160mm.png" />
     <Content Include="images\bremsubunadur\bremsuhandfong.png" />
     <Content Include="images\bremsubunadur\bremsupudar_v_bremsu_70mm.png" />
+    <Content Include="images\bremsubunadur\bremsuvir.png" />
+    <Content Include="images\bremsubunadur\girvir.png" />
     <Content Include="images\bretti\brettasett_16.png" />
     <Content Include="images\bretti\brettasett_20_ MTB.png" />
     <Content Include="images\bretti\brettasett_viper_24_26_759.png" />
@@ -199,6 +202,10 @@
     <Content Include="images\girskiptar\puttaskiptir_3g.png" />
     <Content Include="images\girskiptar\puttaskiptir_7g.png" />
     <Content Include="images\golf_fixed_pumpa.png" />
+    <Content Include="images\hedderStock.jpg" />
+    <Content Include="images\hedderStock2.jpg" />
+    <Content Include="images\hedderStock2crop.jpg" />
+    <Content Include="images\hedderStock2crop2.jpg" />
     <Content Include="images\hjalpardekk_12_20.png" />
     <Content Include="images\Hjol\bike_marlin5.png" />
     <Content Include="images\Hjol\bike_skye.png" />
