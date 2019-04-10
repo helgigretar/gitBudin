@@ -292,6 +292,7 @@
     <Content Include="images\vatnsfloskur_statif\trek_vatnsbrusi.png" />
     <Content Include="images\vatnsfloskur_statif\trek_vatnsbrusinn.png" />
     <Content Include="images\vatnsfloskur_statif\vatnsfloskustatíf.png" />
+    <Content Include="MyCss\cssGrid.css" />
     <Content Include="MyCss\frontPage.css" />
     <Content Include="MyCss\hedder.css" />
     <Content Include="MyCss\heimildamyndir.css" />

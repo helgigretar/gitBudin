@@ -2,63 +2,7 @@
 #standarar_rows_title{
     text-align:center;
 }
-.content_container {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.content_container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 3rem;
-    margin: auto;
-}
 
-.content_grid_element {
-    height: 100%;
-    width: 100%;
-}
-
-.content_grid_element > a {
-    height: 100%;
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-} 
-
-.content_grid_title {
-    text-align: center;
-}
-
-.content_grid_img_wrapper {
-    /* height: 100%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    border: 1px black solid;
-}
-
-.content_grid_img {
-    max-width: 100%;
-}
-
-
-@media (max-width: 800px) {
-    .content_container {
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-    }
-}
-@media (max-width: 500px) {
-    .content_container {
-        grid-template-columns: 1fr;
-        width: 80%;
-    }
-}
 
 
 
@@ -128,13 +72,13 @@ a{
     }
 }*/
 /*Drop downs List í layout*/
-.dropbtn {
+/*.dropbtn {
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-}
+}*/
 /*.dropdown {
     position: relative;
     display: inline-block;

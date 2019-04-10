@@ -15,8 +15,8 @@
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#000000">
     @* favicon end *@
-<link href="~/MyCss/frontpage.css" rel="stylesheet" type="text/css" />
-<link href="~/MyCss/hedder.css" rel="stylesheet" type="text/css" />
+    <link href="~/MyCss/cssGrid.css" rel="stylesheet" type="text/css" />
+    <link href="~/MyCss/hedder.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -41,7 +41,7 @@
 
                 <div class="nav_logo_wrapper navbar-header">
                     @*<img src="~/images/logo.png" class="nav_logo" />*@
-                    @Html.ActionLink("Axelsbúð", "Index", "Home", new { area = "" }, new { @class = " nav_button nav_button_home" })
+                    @Html.ActionLink("Axelsbúð", "Index", "Home", new { area = "" }, new { @class = "nav_button nav_button_home" })
                 </div>
                 <button type="button" class="nav_hamburger" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -97,11 +97,9 @@
 
     <div class="body-content">
         @RenderBody()
-        <hr />
     </div>
 
     @* ATH veit ekki afh. en það er ólokað div úr þessu render boddy.......  *@
-    </div>
 
     <div class="footer_wrapper">
         <div class="footer_bar">

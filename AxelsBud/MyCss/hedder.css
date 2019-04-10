@@ -192,8 +192,9 @@ body {
     padding: 1rem !important;
 }
 
-.nav_button_home:hover {
+.nav_button_home:hover, .nav_button_home:focus {
     color: transparent;
+    outline: none;
     /*background-color: #9d9d9d;*/
 }
 
