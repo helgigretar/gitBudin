@@ -2,42 +2,37 @@
 @{
     ViewBag.Title = "Varahlutir";
 }
-<link href="~/MyCss/hjolin.css" rel="stylesheet" type="text/css" />
-<link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
+<head>
+    <link href="~/MyCss/hjolin.css" rel="stylesheet" type="text/css" />
+    <link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
+</head>
 <html>
 <body>
-    <!-- Fyrsta myndin Þetta er flipi á reiðhjólasíðuna-->
-    <div class="container" style="display:flex;">
-        <div class="voruListarnir">
-            <div target="voruListi">
-                <div class="dropDownListiVoruContainer">
-                    <ul class="unorderdListVoruContainer">
-                        <div class="vorurhaus">Varahlutir</div>
-                        <li class="voruLinkur_valinn">@Html.ActionLink("Vírar,barkar,endar og beygjur", "", "varahlutir/bremsubunadur")</li>
-                        <li class="voruLinkur">@Html.ActionLink("Gírskiptar", "", "varahlutir/girskiptingar")</li>
-                        <li class="voruLinkur">@Html.ActionLink("Keðjur og gírhlífar", "", "varahlutir/kedjur_girhlifar")</li>
-                        <li class="voruLinkur">@Html.ActionLink("Gjarðir ", "", "varahlutir/gjardir")</li>
-                    </ul>
-                </div>
+    <div class="content_container_wrapper">
+        <div class="menu_container">
+            <div class="menu_list">
+                <a class="menu_item menu_title" href="/varahlutir"><div>Varahlutir</div></a>
+                <a class="menu_item menu_item_selected" href="varahlutir/bremsubunadur"><div>Vírar,barkar,endar og beygjur</div></a>
+                <a class="menu_item" href="/varahlutir/girskiptingar"><div>Gírskiptar</div></a>
+                <a class="menu_item" href="/varahlutir/kedjur_girhlifar"><div>Keðjur og gírhlífar</div></a>
+                <a class="menu_item" href="/varahlutir/gjardir"><div>Gjarðir</div></a>
             </div>
         </div>
-        <div class="vorurnar">
+        <div class="content_container with_menu">
             @{
                 for (int count = 0; count < Model.maxer; count++)
                 {
-                    <div class="col-md-4" target="vara">
+                    <div class="content_grid_element">
                         <a href="/vorur?@(Model.audkenin[@count])">
-                            <div class="voruContainer">
-                                <p class="voruFyrirsogn">@Model.nofn[@count]</p>
-                                <img src="~/images/@(Model.myndir[@count]).png" width="200" height="200" />
-                                <p class="price"> @Model.verdin[@count] kr.</p>
+                            <h3 class="content_grid_title">@Model.nofn[@count]</h3>
+                            <div class="content_grid_img_wrapper">
+                                <img class="content_grid_img" src="~/images/@(Model.myndir[@count]).png" />
                             </div>
+                            <p class="content_grid_price"> @Model.verdin[@count] kr.</p>
                         </a>
                     </div>
                 }
-
             }
-
         </div>
     </div>
 </body>
