@@ -148,6 +148,11 @@ namespace AxelsBud
             "fullordinshjol",
             new { controller = "Hjol", action = "fullordinshjol" });
 
+            routes.MapRoute(
+            "hjolvorur",
+            "hjol",
+            new { controller = "hjolvorur", action = "hjolvorur" });
+
 
             routes.MapRoute(
                 name: "Default",

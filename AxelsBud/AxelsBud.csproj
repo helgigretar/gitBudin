@@ -128,6 +128,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\aukahlutirController.cs" />
     <Compile Include="Controllers\hjolastandarController.cs" />
+    <Compile Include="Controllers\hjolvorurController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HjolController.cs" />
     <Compile Include="Controllers\kertastjakarController.cs" />
@@ -377,6 +378,7 @@
     <Content Include="Views\varahlutir\index.cshtml" />
     <Content Include="Views\aukahlutir\index.cshtml" />
     <Content Include="Views\Hjol\fullordinshjol.cshtml" />
+    <Content Include="Views\hjolvorur\hjolvorur.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\karlaHjol\" />
