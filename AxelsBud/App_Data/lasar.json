@@ -12,5 +12,12 @@
     "mynd": "lasar/las_med_lykil",
     "lysing": "margir litir $ opnast með lykil",
     "ID": "las_1"
+  },
+  {
+    "Name": "Lás með 4 tölum",
+    "verd": "1000",
+    "mynd": "lasar/las_med_tolum_langur",
+    "lysing": "margir litir $ 4 stafa lykilorð",
+    "ID": "las_2"
   }
 ]

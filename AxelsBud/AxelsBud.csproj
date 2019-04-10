@@ -252,6 +252,7 @@
     <Content Include="images\krakkar\thrihjol_pink.png" />
     <Content Include="images\krakkar\thrihjol_yellow.png" />
     <Content Include="images\lasar\las_med_lykil.png" />
+    <Content Include="images\lasar\las_med_tolum_langur.png" />
     <Content Include="images\lasar\las_me_tolum.png" />
     <Content Include="images\home.png" />
     <Content Include="images\home.svg" />
