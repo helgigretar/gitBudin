@@ -6,48 +6,35 @@
 <link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
 <html>
 <body>
-    <!-- Fyrsta myndin Þetta er flipi á reiðhjólasíðuna-->
     <div class="content_container_wrapper">
-        <div class="menu_container">
-            @*<div target="voruListi">*@
-                @*<div class="dropDownListiVoruContainer">*@
-                    <ul class="menu_list">
-                        <li class="menu_item menu_title">@Html.ActionLink("Aukahlutir", "", "aukahlutir")</li>
-                        <li class="menu_item">@Html.ActionLink("Bjöllur", "", "aukahlutir/bjollur")</li>
-                        <li class="menu_item">@Html.ActionLink("Bretti", "", "aukahlutir/bretti")</li>
-                        <li class="menu_item">@Html.ActionLink("Bögglaberar", "", "aukahlutir/bogglaberar")</li>
-                        <li class="menu_item">@Html.ActionLink("Hraðamælar", "", "aukahlutir/hradamaelar")</li>
-                        <li class="menu_item">@Html.ActionLink("Körfur", "", "aukahlutir/korfur")</li>
-                        <li class="menu_item">@Html.ActionLink("Ljós", "", "aukahlutir/ljos")</li>
-                        <li class="menu_item">@Html.ActionLink("Pedalar", "", "aukahlutir/pedalar")</li>
-                        <li class="menu_item">@Html.ActionLink("Pumpur", "", "aukahlutir/pumpur")</li>
-                        <li class="menu_item">@Html.ActionLink("Standarar", "", "aukahlutir/standarar")</li>
-                        <li class="menu_item">@Html.ActionLink("Stýrisendar", "", "aukahlutir/styrisendar")</li>
-                        <li class="menu_item">@Html.ActionLink("Vatnsflöskur og statíf", "", "aukahlutir/vatnsfloskur_statif")</li>
-                        <li class="menu_item">@Html.ActionLink("Hnakkar", "", "aukahlutir/hnakkar")</li>
-                        <li class="menu_item">@Html.ActionLink("Lásar", "", "aukahlutir/lasar")</li>
-                    </ul>
-                @*</div>
-            </div>*@
+        <div class="menu_container">         
+            <ul class="menu_list">
+                <a  class="menu_item menu_title" href="aukahlutir"><li>Aukahlutir</li></a>
+                <a  class="menu_item" href="aukahlutir/bjollur"><li>Bjöllur</li></a>
+                <a  class="menu_item" href="aukahlutir/bretti"><li>Bretti</li></a>
+                <a  class="menu_item" href="aukahlutir/bogglaberar"><li>Bögglaberar</li></a>
+                <a  class="menu_item" href="aukahlutir/hradamaelar"><li>Hraðamælar</li></a>
+                <a  class="menu_item" href="aukahlutir/pedalar"><li>Körfur</li></a>
+                <a  class="menu_item" href="aukahlutir/ljos"><li>Ljós</li></a>
+                <a  class="menu_item" href="aukahlutir/pumpur"><li>Pedalar</li></a>
+                <a  class="menu_item" href="aukahlutir/pumpur"><li>Pumpur</li></a>
+                <a  class="menu_item" href="aukahlutir/standarar"><li>Standarar</li></a>
+                <a  class="menu_item" href="aukahlutir/styrisendar"><li>Stýrisendar</li></a>
+                <a  class="menu_item" href="aukahlutir/vatnsfloskur_statif"><li>Vatnsflöskur og statíf</li></a>
+                <a  class="menu_item" href="aukahlutir/hnakkar"><li>Hnakkar</li></a>
+                <a  class="menu_item" href="aukahlutir/lasar"><li>Lásar</li></a>
+            </ul>
         </div>
         <div class="content_container with_menu">
-            @*<div class="vorurnar">
-                <div class="vorurnar_title"> Allir aukahlutir</div>*@
-            @{
-                for (int count = 0; count < Model.maxer; count++)
+              for (int count = 0; count < Model.maxer; count++)
                 {
-                    <div class="content_grid_element" @*target="vara"*@>
+                    <div class="content_grid_element">
                         <a href="/vorur?@(Model.audkenin[@count])">
-                            @*<div class="voruContainer">*@
                             <h3 class="content_grid_title">@Model.nofn[@count]</h3>
-
-                            @*<p class="voruFyrirsogn">@Model.nofn[@count]</p>*@
                             <div class="content_grid_img_wrapper">
                                 <img class="content_grid_img" src="~/images/@(Model.myndir[@count]).png" />
                             </div>
-                            @*<img src="~/images/@(Model.myndir[@count]).png" @*width="200" height="200" />*@
                             <p class="content_grid_price"> @Model.verdin[@count] kr.</p>
-                            @*</div>*@
                         </a>
                     </div>
                 }
