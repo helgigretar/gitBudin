@@ -16,12 +16,25 @@ namespace AxelsBud.Controllers
         private static string verd;
         private static string mynd;
         private static string[] lysing = new string[30];
-        private static string[] imgSrc = new string[30];
-        private static string[] linkshref = new string[30];
+        private static string[] extraName = new string[30];
+        private static string[] extraprice = new string[30];
+        private static string[] extraLinks = new string[30];
+
         private static string ids;
+        private static string groups;
         // GET: hjolvorur
         public ActionResult hjolvorur()
         {
+            names = null;
+            verd = null;
+            mynd = null;
+            groups = null;
+            //Þarf að búa til fylki
+            lysing = new string[30];
+            extraName = new string[30];
+            extraprice = new string[30];
+            extraLinks = new string[30];
+            ids = null;
             //Náum í URI
             string tempUrl = HttpContext.Request.Url.AbsoluteUri.ToString();
             //Náum í vöruna
@@ -29,6 +42,7 @@ namespace AxelsBud.Controllers
             //assignum vöruna breytu
             string vara = words[1];
             LoadJson("hjol", vara);
+            LoadJsonMultiple(groups);
             var result = new vorur()
             {
                 verd = verd,
@@ -36,7 +50,9 @@ namespace AxelsBud.Controllers
                 lysing = lysing,
                 mynd = mynd,
                 nafn = names,
-                multipleLinks = false,
+                extraNames = extraName,
+                extraPrices = extraprice,
+                extraLinks = extraLinks,
             };
             return View(result);
         }
@@ -57,6 +73,7 @@ namespace AxelsBud.Controllers
                         verd = data.verd;
                         mynd = data.mynd;
                         ids = data.ID;
+                        groups = data.group;
                         string[] reviews = data.lysing.Split('$');
                         int counter = 0;
                         foreach (var item in reviews)
@@ -68,6 +85,27 @@ namespace AxelsBud.Controllers
 
                 }
 
+            }
+        }
+        public void LoadJsonMultiple(string group)
+        {
+            string path = HttpContext.Server.MapPath("~/App_Data/" + "hjol" + ".json");
+            using (StreamReader r = new StreamReader(path))
+            {
+                string json = r.ReadToEnd();
+                var items = JsonConvert.DeserializeObject<List<Item>>(json);
+                int count = 0;
+                foreach (var data in items)
+                {
+                    if (data.group == group)
+                    {
+                        extraName[count] = data.Name;
+                        extraprice[count] = data.verd;
+                        extraLinks[count] = data.ID;
+                        count++;
+                    }
+
+                }
             }
         }
     }

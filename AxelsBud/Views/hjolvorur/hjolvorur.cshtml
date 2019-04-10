@@ -1,111 +1,112 @@
 ﻿<!DOCTYPE html>
 @model AxelsBud.Models.vorur
-    @{
-        ViewBag.Title = "hjolvorur";
-    }
+@{
+    ViewBag.Title = "hjolvorur";
+}
 
-    <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="~/MyCss/hjolin.css" rel="stylesheet" type="text/css" />
-        <link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
-        <link href="~/MyCss/vorur.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/MyCss/hjolin.css" rel="stylesheet" type="text/css" />
+    <link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
+    <link href="~/MyCss/vorur.css" rel="stylesheet" type="text/css" />
+    @* test *@
+    <link rel="stylesheet" type="text/css" href="themes/easydropdown.css" />
+</head>
 
-        <!-- Fyrsta myndin Þetta er flipi á reiðhjólasíðuna-->
-        <div class="headerBreaker"></div>
-        <div class="container">
-            <div class="vorurHeader">@Model.nafn</div>
-            <div class="row">
-                <div class="col-md-5" target="vorurMynd">
-                    <img id="myImg" src="~/images/@(Model.mynd).png" alt="@Model.nafn" />
-                    <p class="price" target="voruverd"> @Model.verd kr.</p>
-                </div>
-                <div class="col-md-4" target="vorurLysing">
-                    <h3>Nánari lýsing</h3>
-                    <ul>
-                        @{
-                            foreach (var item in Model.lysing)
+<body>
+
+    <!-- Fyrsta myndin Þetta er flipi á reiðhjólasíðuna-->
+    <div class="headerBreaker"></div>
+    <div class="container">
+        <div class="vorurHeader">@Model.nafn</div>
+        <div class="row">
+            <div class="col-md-5" target="vorurMynd">
+                <img id="myImg" src="~/images/@(Model.mynd).png" alt="@Model.nafn" />
+                <p class="price" target="voruverd"> @Model.verd kr.</p>
+            </div>
+            <div class="col-md-4" target="vorurLysing">                
+                <h3>Nánari lýsing</h3>
+                <ul>
+                    @{
+                        foreach (var item in Model.lysing)
+                        {
+                            if (@item != null)
                             {
-                                if (@item != null)
+                                <li>@item</li>
+                            }
+                        }
+                    }
+                </ul>
+                <div class="dropdown nav_button">
+                    <a class="">Undirflokkar</a>
+                    <div class="dropdown_content">
+                        @{ 
+                            for(int i = 0; i < Model.extraNames.Length; i++)
+                            {
+                                if(Model.extraPrices[i] != null)
                                 {
-                                    <li>@item</li>
+                                    <a href="/hjol?@Model.extraLinks[i]">
+                                        <p>@Model.extraNames[i]</p>
+                                        <b>@Model.extraPrices[i]</b>
+                                    </a>
+
                                 }
                             }
                         }
-                    </ul>
-                    @{
-                        if (Model.multipleLinks == true)
-                        {
-                            <div class="row">
-                                <h3>Valmöguleikar</h3>
-
-                                @{
-                                    int counter = 0;
-                                    foreach (var item in Model.imgs)
-                                    {
-                                        if (item != null)
-                                        {
-                                            <a href="vorur?@Model.links[counter]">
-                                                <img src="~/images/@(item).png" />
-
-                                            </a>
-                                        }
-                                        counter = counter + 1;
-
-                                    }
-                                }
-
-                            </div>
-                        }
-                    }
+                    </div>
                 </div>
             </div>
-            <div class="breaker"></div>
         </div>
+        <div class="breaker"></div>
+    </div>
 
-        <!-- The Modal -->
-        <span class="test">
-            <div id="myModal" class="modal">
-                <img class="modal-content" id="img01">
-            </div>
-        </span>
+    <!-- The Modal -->
+    <span class="test">
+        <div id="myModal" class="modal">
+            <img class="modal-content" id="img01">
+        </div>
+    </span>
 
-        <script>
-            // Get the modal
-            var modal = document.getElementById('myModal');
-            document.addEventListener('click', (event) => {
-                if (modal.style.display == "none") {
-                    console.log(modal.style.display)
-                    modal.style.display = "none";
-
-                }
-
-            });
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById('myImg');
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function () {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            /*  var span = document.getElementsByClassName("close")[0];
-
-              // When the user clicks on <span> (x), close the modal
-              span.onclick = function () {
-                  modal.style.display = "none";
-              }*/
-            var spaner = document.getElementsByClassName("test")[0];
-            spaner.onclick = function () {
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        document.addEventListener('click', (event) => {
+            if (modal.style.display == "none") {
+                console.log(modal.style.display)
                 modal.style.display = "none";
-            }
-        </script>
 
-    </body>
+            }
+
+        });
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        /*  var span = document.getElementsByClassName("close")[0];
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function () {
+              modal.style.display = "none";
+          }*/
+        var spaner = document.getElementsByClassName("test")[0];
+        spaner.onclick = function () {
+            modal.style.display = "none";
+        }
+       
+        function rerouting(url) {
+            console.log("jejeje");
+            window.location = url;
+        }
+    </script>
+
+</body>
 </html>

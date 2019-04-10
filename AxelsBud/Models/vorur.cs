@@ -14,6 +14,9 @@ namespace AxelsBud.Models
         public string verd { get; set; }
         public string [] imgs { get; set; }
         public string [] links { get; set; }
+        public string [] extraNames { get; set; }
+        public string [] extraPrices { get; set; }
+        public string [] extraLinks { get; set; }
         public bool multipleLinks { get; set; }
     }
 }
