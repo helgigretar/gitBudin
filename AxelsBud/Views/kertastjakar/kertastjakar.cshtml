@@ -3,45 +3,47 @@
     ViewBag.Title = "kertastjakarnir";
 }
 <head>
-    <link href="~/MyCss/krakkar.css" rel="stylesheet" type="text/css" />
-    <link href="~/MyCss/hjolin.css" rel="stylesheet" type="text/css" />
-    <link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
+    <link href="~/MyCss/kertastjakar.css" rel="stylesheet" type="text/css" />
 </head>
 <html>
 <body>
-    <div class="container">
-        <div class="row" id="standarar_rows_title">
-            <h1>Kertastjakar</h1>
-            <img src="~/images/kertastjakar/stal_i_stal.png" width="400"/>
+    <div class="all_content">
+        <div class="candels_title_wrapper">
+            <h1 class="candels_title">Kertastjakar</h1>
+            <img class="candels_title_img" src="~/images/kertastjakar/stal_i_stal.png"/>
         </div>
-        <br />
-        <br />
-        <div class="col-md-4" target="vara">
-            <a href="/vorur?@(Model.audkenin[0])">
-                <div class="voruContainer">
-                    <p class="voruFyrirsogn">@Model.nofn[0]</p>
-                    <img src="~/images/@(Model.myndir[0]).png" width="200" height="200" />
-                    <p class="price"> @Model.verdin[0] kr.</p>
+        <div class="content_container_wrapper">
+            <div class="content_container">
+                <div class="content_grid_element">
+                    <a href="/hjol?@(Model.audkenin[0])">
+                        <h3 class="content_grid_title">@Model.nofn[0]</h3>
+                        <div class="content_grid_img_wrapper">
+                            <img class="content_grid_img" src="~/images/@(Model.myndir[0]).png" />
+                        </div>
+                        <p class="content_grid_price"> @Model.verdin[0] kr.</p>
+                    </a>
                 </div>
-            </a>
-        </div>
-        <div class="col-md-4" target="vara">
-            <a href="/vorur?@(Model.audkenin[1])">
-                <div class="voruContainer">
-                    <p class="voruFyrirsogn">@Model.nofn[1]</p>
-                    <img src="~/images/@(Model.myndir[1]).png" width="200" height="200" />
-                    <p class="price"> @Model.verdin[1] kr.</p>
+
+                <div class="content_grid_element">
+                    <a href="/hjol?@(Model.audkenin[1])">
+                        <h3 class="content_grid_title">@Model.nofn[1]</h3>
+                        <div class="content_grid_img_wrapper">
+                            <img class="content_grid_img" src="~/images/@(Model.myndir[1]).png" />
+                        </div>
+                        <p class="content_grid_price"> @Model.verdin[1] kr.</p>
+                    </a>
                 </div>
-            </a>
-        </div>
-        <div class="col-md-4" target="vara">
-            <a href="/vorur?@(Model.audkenin[2])">
-                <div class="voruContainer">
-                    <p class="voruFyrirsogn">@Model.nofn[2]</p>
-                    <img src="~/images/@(Model.myndir[2]).png" width="200" height="200" />
-                    <p class="price">@Model.verdin[2] kr.</p>
+
+                <div class="content_grid_element">
+                    <a href="/hjol?@(Model.audkenin[2])">
+                        <h3 class="content_grid_title">@Model.nofn[2]</h3>
+                        <div class="content_grid_img_wrapper">
+                            <img class="content_grid_img" src="~/images/@(Model.myndir[2]).png" />
+                        </div>
+                        <p class="content_grid_price"> @Model.verdin[2] kr.</p>
+                    </a>
                 </div>
-            </a>
+            </div>
         </div>
     </div>
 </body>
