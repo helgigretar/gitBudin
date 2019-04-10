@@ -1,15 +1,19 @@
 ﻿<!DOCTYPE html>
 @model AxelsBud.Models.vorur
 @{
-    ViewBag.Title = "vorur";
+    ViewBag.Title = "hjolvorur";
 }
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="~/MyCss/hjolin.css" rel="stylesheet" type="text/css" />
     <link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
     <link href="~/MyCss/vorur.css" rel="stylesheet" type="text/css" />
+    @* test *@
+    <link rel="stylesheet" type="text/css" href="themes/easydropdown.css" />
 </head>
+
 <body>
 
     <!-- Fyrsta myndin Þetta er flipi á reiðhjólasíðuna-->
@@ -18,10 +22,10 @@
         <div class="vorurHeader">@Model.nafn</div>
         <div class="row">
             <div class="col-md-5" target="vorurMynd">
-                <img id="myImg" src="~/images/@(Model.mynd).png" alt="@Model.nafn"/>
+                <img id="myImg" src="~/images/@(Model.mynd).png" alt="@Model.nafn" />
                 <p class="price" target="voruverd"> @Model.verd kr.</p>
             </div>
-            <div class="col-md-4" target="vorurLysing">
+            <div class="col-md-4" target="vorurLysing">                
                 <h3>Nánari lýsing</h3>
                 <ul>
                     @{
@@ -34,31 +38,24 @@
                         }
                     }
                 </ul>
-                @{ 
-                    if(Model.multipleLinks == true)
-                    {
-                        <div class="row">
-                            <h3>Valmöguleikar</h3>
-
-                            @{
-                                int counter = 0;
-                                foreach (var item in Model.imgs)
+                <div class="dropdown nav_button">
+                    <a class="">Undirflokkar</a>
+                    <div class="dropdown_content">
+                        @{ 
+                            for(int i = 0; i < Model.extraNames.Length; i++)
+                            {
+                                if(Model.extraPrices[i] != null)
                                 {
-                                    if(item!= null)
-                                    {
-                                        <a href="vorur?@Model.links[counter]">
-                                        <img  src="~/images/@(item).png"/>
-
-                                        </a>
-                                    }
-                                    counter = counter + 1;
+                                    <a href="/hjol?@Model.extraLinks[i]">
+                                        <p>@Model.extraNames[i]</p>
+                                        <b>@Model.extraPrices[i]</b>
+                                    </a>
 
                                 }
                             }
-
-                        </div>
-                    }
-                }
+                        }
+                    </div>
+                </div>
             </div>
         </div>
         <div class="breaker"></div>
@@ -76,11 +73,11 @@
         var modal = document.getElementById('myModal');
         document.addEventListener('click', (event) => {
             if (modal.style.display == "none") {
-                 console.log(modal.style.display)
+                console.log(modal.style.display)
                 modal.style.display = "none";
 
             }
-     
+
         });
 
         // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -94,15 +91,20 @@
         }
 
         // Get the <span> element that closes the modal
-      /*  var span = document.getElementsByClassName("close")[0];
+        /*  var span = document.getElementsByClassName("close")[0];
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }*/
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function () {
+              modal.style.display = "none";
+          }*/
         var spaner = document.getElementsByClassName("test")[0];
         spaner.onclick = function () {
             modal.style.display = "none";
+        }
+       
+        function rerouting(url) {
+            console.log("jejeje");
+            window.location = url;
         }
     </script>
 

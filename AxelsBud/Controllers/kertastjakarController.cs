@@ -59,5 +59,6 @@ namespace AxelsBud.Controllers
         public string mynd;
         public string verd;
         public string ID;
+        public string group;
     }
 }
