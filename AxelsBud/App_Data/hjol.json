@@ -117,8 +117,48 @@
     "mynd": "hjol/hjol_marlin_6_black",
     "lysing": "Alpha Silver álstell $ Dempari að framan, 100 mm með vökvalæsingu $ Tvöfaldar gjarðir $ Suntour XCT30, 100mm demparagafall, með vökvalæsingu $ Shimano Tourney Ty-501 sveifasett $ 24 gírar $ vökvadiskabremsur $ Uppfærsla frá TREK Marlin 5 $ Shimano Altus gírbúnaður ",
     "ID": "hjol_14",
+    "group": "0"
+  },
+  {
+    "Name": "Marlin 6 13,5/27,5'' Matte Black",
+    "verd": "94.990",
+    "mynd": "hjol/hjol_marlin_6_black",
+    "lysing": "Alpha Silver álstell $ Dempari að framan, 100 mm með vökvalæsingu $ Tvöfaldar gjarðir $ Suntour XCT30, 100mm demparagafall, með vökvalæsingu $ Shimano Tourney Ty-501 sveifasett $ 24 gírar $ vökvadiskabremsur $ Uppfærsla frá TREK Marlin 5 $ Shimano Altus gírbúnaður ",
+    "ID": "hjol_15",
     "group": "5"
   },
+  {
+    "Name": "Marlin 6 15,5/27,5'' Matte Black",
+    "verd": "94.990",
+    "mynd": "hjol/hjol_marlin_6_black",
+    "lysing": "Alpha Silver álstell $ Dempari að framan, 100 mm með vökvalæsingu $ Tvöfaldar gjarðir $ Suntour XCT30, 100mm demparagafall, með vökvalæsingu $ Shimano Tourney Ty-501 sveifasett $ 24 gírar $ vökvadiskabremsur $ Uppfærsla frá TREK Marlin 5 $ Shimano Altus gírbúnaður ",
+    "ID": "hjol_16",
+    "group": "5"
+  },
+  {
+    "Name": "Marlin 6 17,5/29'' Matte Black",
+    "verd": "94.990",
+    "mynd": "hjol/hjol_marlin_6_black",
+    "lysing": "Alpha Silver álstell $ Dempari að framan, 100 mm með vökvalæsingu $ Tvöfaldar gjarðir $ Suntour XCT30, 100mm demparagafall, með vökvalæsingu $ Shimano Tourney Ty-501 sveifasett $ 24 gírar $ vökvadiskabremsur $ Uppfærsla frá TREK Marlin 5 $ Shimano Altus gírbúnaður ",
+    "ID": "hjol_17",
+    "group": "5"
+  },
+  {
+    "Name": "Marlin 6 19,5/29'' Matte Black",
+    "verd": "94.990",
+    "mynd": "hjol/hjol_marlin_6_black",
+    "lysing": "Alpha Silver álstell $ Dempari að framan, 100 mm með vökvalæsingu $ Tvöfaldar gjarðir $ Suntour XCT30, 100mm demparagafall, með vökvalæsingu $ Shimano Tourney Ty-501 sveifasett $ 24 gírar $ vökvadiskabremsur $ Uppfærsla frá TREK Marlin 5 $ Shimano Altus gírbúnaður ",
+    "ID": "hjol_18",
+    "group": "5"
+  },
+  {
+    "Name": "Marlin 6 21,5/29'' Matte Black",
+    "verd": "94.990",
+    "mynd": "hjol/hjol_marlin_6_black",
+    "lysing": "Alpha Silver álstell $ Dempari að framan, 100 mm með vökvalæsingu $ Tvöfaldar gjarðir $ Suntour XCT30, 100mm demparagafall, með vökvalæsingu $ Shimano Tourney Ty-501 sveifasett $ 24 gírar $ vökvadiskabremsur $ Uppfærsla frá TREK Marlin 5 $ Shimano Altus gírbúnaður ",
+    "ID": "hjol_19",
+    "group": "5"
+  }
 
 
 ]
