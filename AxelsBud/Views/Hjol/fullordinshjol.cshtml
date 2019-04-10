@@ -9,42 +9,44 @@
 </head>
 <html>
     <body>
-        <div class="container">
-            <div class="col-md-4" target="vara">
-                <a href="/hjol?@(Model.audkenin[0])">
-                    <div class="voruContainer">
-                        <p class="voruFyrirsogn">@Model.nofn[0]</p>
-                        <img src="~/images/@(Model.myndir[0]).png" width="200" height="200" />
-                        <p class="price"> @Model.verdin[0] kr.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4" target="vara">
-                <a href="/hjol?@(Model.audkenin[4])">
-                    <div class="voruContainer">
-                        <p class="voruFyrirsogn">@Model.nofn[4]</p>
-                        <img src="~/images/@(Model.myndir[4]).png" width="200" height="200" />
-                        <p class="price"> @Model.verdin[4] kr.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4" target="vara">
-                <a href="/hjol?@(Model.audkenin[9])">
-                    <div class="voruContainer">
-                        <p class="voruFyrirsogn">@Model.nofn[9]</p>
-                        <img src="~/images/@(Model.myndir[9]).png" width="200" height="200" />
-                        <p class="price"> @Model.verdin[9] kr.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4" target="vara">
-                <a href="/hjol?@(Model.audkenin[12])">
-                    <div class="voruContainer">
-                        <p class="voruFyrirsogn">@Model.nofn[12]</p>
-                        <img src="~/images/@(Model.myndir[12]).png" width="200" height="200" />
-                        <p class="price"> @Model.verdin[12] kr.</p>
-                    </div>
-                </a>
+        <div class="content_container_wrapper">
+            <div class="content_container">
+                <div class="content_grid_element">
+                    <a href="/hjol?@(Model.audkenin[0])">
+                        <h3 class="content_grid_title">@Model.nofn[0]</h3>
+                        <div class="content_grid_img_wrapper">
+                            <img class="content_grid_img" src="~/images/@(Model.myndir[0]).png" />
+                        </div>
+                        <p class="content_grid_price"> @Model.verdin[0] kr.</p>
+                    </a>
+                </div>
+                <div class="content_grid_element">
+                    <a href="/hjol?@(Model.audkenin[4])">
+                        <h3 class="content_grid_title">@Model.nofn[4]</h3>
+                        <div class="content_grid_img_wrapper">
+                            <img class="content_grid_img" src="~/images/@(Model.myndir[4]).png" />
+                        </div>
+                        <p class="content_grid_price"> @Model.verdin[4] kr.</p>
+                    </a>
+                </div>
+                <div class="content_grid_element">
+                    <a href="/hjol?@(Model.audkenin[9])">
+                        <h3 class="content_grid_title">@Model.nofn[9]</h3>
+                        <div class="content_grid_img_wrapper">
+                            <img class="content_grid_img" src="~/images/@(Model.myndir[9]).png" />
+                        </div>
+                        <p class="content_grid_price"> @Model.verdin[9] kr.</p>
+                    </a>
+                </div>
+                <div class="content_grid_element">
+                    <a href="/hjol?@(Model.audkenin[12])">
+                        <h3 class="content_grid_title">@Model.nofn[12]</h3>
+                        <div class="content_grid_img_wrapper">
+                            <img class="content_grid_img" src="~/images/@(Model.myndir[12]).png" />
+                        </div>
+                        <p class="content_grid_price"> @Model.verdin[12] kr.</p>
+                    </a>
+                </div>
             </div>
         </div>
 
