@@ -1,0 +1,10 @@
+﻿.hjolastandarar_listi {
+    padding: 0;
+    list-style: none;
+}
+.hjolastandarar_img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
