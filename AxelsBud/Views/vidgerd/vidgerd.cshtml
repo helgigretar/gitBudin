@@ -1,18 +1,68 @@
-﻿
+﻿@model AxelsBud.Models.hjolastandar
 @{
     ViewBag.Title = "Viðgerð";
 }
 <head>
-    <<link href="~/MyCss/vidgerd.css" rel="stylesheet" type="text/css" />
+    <link href="~/MyCss/hjolin.css" rel="stylesheet" type="text/css" />
+    <link href="~/MyCss/hjolaStandar.css" rel="stylesheet" type="text/css" />
+    <link href="~/MyCss/vorur.css" rel="stylesheet" type="text/css" />
+    <link href="~/MyCss/heimildamyndir.css" rel="stylesheet" type="text/css" />
+    <link href="~/MyCss/hjolastandarar.css" rel="stylesheet" type="text/css" />
 </head>
 <html>
-    <body>
-        <div class="fyrirsogn"> Setja hjól í viðgerð</div>
-        <div class="row">
+<body>
+    <div class="row doc_wrapper">
+        <h1 class="doc_heading">Setja hjól í viðgerð</h1>
+        <div class="doc_text">
             <p>Tek að mér viðgerðir á öllum tegundum af hjólum</p>
             <p>Endilega komdu bara með hjólið og ég get skoðað hjólið hjá þér</p>
         </div>
-        <div></div>
-    </body>
+        <img id="myImg" class="hjolastandarar_img" src="~/images/vidgerd.png" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!-- The Modal -->
+        @*<span class="test">
+            <div id="myModal" class="modal">
+                <img class="modal-content" id="img01">
+            </div>
+        </span>*@
+    </div>
+</body>
 </html>
 
+@*<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+    document.addEventListener('click', (event) => {
+        if (modal.style.display == "none") {
+            console.log(modal.style.display)
+            modal.style.display = "none";
+
+        }
+
+    });
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    /*  var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+          modal.style.display = "none";
+      }*/
+    var spaner = document.getElementsByClassName("test")[0];
+    spaner.onclick = function () {
+        modal.style.display = "none";
+    }
+</script>*@

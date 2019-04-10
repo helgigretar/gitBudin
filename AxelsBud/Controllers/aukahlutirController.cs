@@ -55,6 +55,7 @@ namespace AxelsBud.Controllers
                 nofn = names,
                 verdin = verd,
                 audkenin = ids,
+                maxer = counter,
             };
             return View(results);
         }
@@ -69,7 +70,8 @@ namespace AxelsBud.Controllers
                 myndir = mynd,
                 nofn = names,
                 verdin = verd,
-                audkenin = ids
+                audkenin = ids,
+                maxer = counter,
             };
             return View(results);
         }
@@ -84,7 +86,8 @@ namespace AxelsBud.Controllers
                 myndir = mynd,
                 nofn = names,
                 verdin = verd,
-                audkenin = ids
+                audkenin = ids,
+                maxer = counter,
             };
             return View(results);
         }
@@ -99,7 +102,8 @@ namespace AxelsBud.Controllers
                 myndir = mynd,
                 nofn = names,
                 verdin = verd,
-                audkenin = ids
+                audkenin = ids,
+                maxer = counter,
             };
             return View(results);
         }
@@ -114,7 +118,8 @@ namespace AxelsBud.Controllers
                 myndir = mynd,
                 nofn = names,
                 verdin = verd,
-                audkenin = ids
+                audkenin = ids,
+                maxer = counter,
             };
             return View(results);
         }
@@ -129,7 +134,8 @@ namespace AxelsBud.Controllers
                 myndir = mynd,
                 nofn = names,
                 verdin = verd,
-                audkenin = ids
+                audkenin = ids,
+                maxer = counter,
             };
             return View(results);
         }
@@ -144,7 +150,8 @@ namespace AxelsBud.Controllers
                 myndir = mynd,
                 nofn = names,
                 verdin = verd,
-                audkenin = ids
+                audkenin = ids,
+                maxer = counter,
             };
             return View(results);
         }
@@ -159,7 +166,8 @@ namespace AxelsBud.Controllers
                 myndir = mynd,
                 nofn = names,
                 verdin = verd,
-                audkenin = ids
+                audkenin = ids,
+                maxer = counter,
             };
             return View(results);
         }
@@ -174,7 +182,8 @@ namespace AxelsBud.Controllers
                 myndir = mynd,
                 nofn = names,
                 verdin = verd,
-                audkenin = ids
+                audkenin = ids,
+                maxer = counter,
             };
             return View(results);
         }
@@ -189,7 +198,8 @@ namespace AxelsBud.Controllers
                 myndir = mynd,
                 nofn = names,
                 verdin = verd,
-                audkenin = ids
+                audkenin = ids,
+                maxer = counter,
             };
             return View(results);
         }
@@ -204,7 +214,8 @@ namespace AxelsBud.Controllers
                 myndir = mynd,
                 nofn = names,
                 verdin = verd,
-                audkenin = ids
+                audkenin = ids,
+                maxer = counter,
             };
             return View(results);
         }
@@ -219,7 +230,8 @@ namespace AxelsBud.Controllers
                 myndir = mynd,
                 nofn = names,
                 verdin = verd,
-                audkenin = ids
+                audkenin = ids,
+                maxer = counter,
             };
             return View(results);
         }
@@ -234,7 +246,8 @@ namespace AxelsBud.Controllers
                 myndir = mynd,
                 nofn = names,
                 verdin = verd,
-                audkenin = ids
+                audkenin = ids,
+                maxer = counter,
             };
             return View(results);
         }
