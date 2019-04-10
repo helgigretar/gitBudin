@@ -35,7 +35,16 @@ namespace AxelsBud.Controllers
             //Náum í vöruna
             string[] words = tempUrl.Split('?');
             //assignum vöruna breytu
-            string vara = words[1];
+            string vara = "";
+            try
+            {
+                //If it crashes in this try the catch statement will catch it and redirect the user one back.
+               vara = words[1];
+            }
+            catch
+            {
+                Response.Redirect("~/");
+            }
             //if bjöllur hjá krökkum
             if(vara == "krakkar_1" || vara =="krakkar_2" || vara == "krakkar_3" || vara == "krakkar_4")
             {

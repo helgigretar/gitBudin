@@ -40,7 +40,15 @@ namespace AxelsBud.Controllers
             //Náum í vöruna
             string[] words = tempUrl.Split('?');
             //assignum vöruna breytu
-            string vara = words[1];
+            string vara = "";
+            try
+            {
+                vara = words[1];
+            }
+            catch
+            {
+                Response.Redirect("~/");
+            }
             LoadJson("hjol", vara);
             LoadJsonMultiple(groups);
             var result = new vorur()
