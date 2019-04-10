@@ -300,6 +300,7 @@
     <Content Include="MyCss\heimildamyndir.css" />
     <Content Include="MyCss\hjolastandarar.css" />
     <Content Include="MyCss\hjolin.css" />
+    <Content Include="MyCss\kertastjakar.css" />
     <Content Include="MyCss\krakkar.css" />
     <Content Include="MyCss\vidgerd.css" />
     <Content Include="MyCss\vorur.css" />

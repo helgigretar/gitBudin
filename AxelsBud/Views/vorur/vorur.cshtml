@@ -5,23 +5,18 @@
 }
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="~/MyCss/hjolin.css" rel="stylesheet" type="text/css" />
-    <link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
     <link href="~/MyCss/vorur.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
     <!-- Fyrsta myndin Þetta er flipi á reiðhjólasíðuna-->
-    <div class="headerBreaker"></div>
-    <div class="container">
-        <div class="vorurHeader">@Model.nafn</div>
-        <div class="row">
-            <div class="col-md-5" target="vorurMynd">
-                <img id="myImg" src="~/images/@(Model.mynd).png" alt="@Model.nafn"/>
-                <p class="price" target="voruverd"> @Model.verd kr.</p>
+    <div class="all_content">
+        <h3 class="product_name">@Model.nafn</h3>
+        <div class="product_wrapper">
+            <div class="product_img_wrapper">
+                <img class="product_img" id="myImg" src="~/images/@(Model.mynd).png" alt="@Model.nafn"/>
             </div>
-            <div class="col-md-4" target="vorurLysing">
+            <div class="product_info">
                 <h3>Nánari lýsing</h3>
                 <ul>
                     @{
@@ -33,21 +28,23 @@
                             }
                         }
                     }
+                    <li class="product_price" target="voruverd"> @Model.verd kr.</li>
                 </ul>
-                @{ 
-                    if(Model.multipleLinks == true)
+
+                @{
+                    if (Model.multipleLinks == true)
                     {
-                        <div class="row">
-                            <h3>Valmöguleikar</h3>
+                        <h4>Valmöguleikar</h4>
+                        <div class="options_wrapper">
 
                             @{
                                 int counter = 0;
                                 foreach (var item in Model.imgs)
                                 {
-                                    if(item!= null)
+                                    if (item != null)
                                     {
-                                        <a href="vorur?@Model.links[counter]">
-                                        <img  src="~/images/@(item).png"/>
+                                        <a class="img_option_wrapper"href="vorur?@Model.links[counter]">
+                                            <img class="img_option" src="~/images/@(item).png" />
 
                                         </a>
                                     }
