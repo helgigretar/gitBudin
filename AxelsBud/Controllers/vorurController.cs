@@ -119,6 +119,7 @@ namespace AxelsBud.Controllers
             LoadJson("kertastjakar", vara);
             LoadJson("girskiptar", vara);
             LoadJson("bremsubunadur", vara);
+            LoadJson("kertastjakar", vara);
             //LoadJson("hnakkar", vara);
             LoadJson("krakkar", vara);
            
