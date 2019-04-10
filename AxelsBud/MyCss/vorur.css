@@ -1,29 +1,75 @@
-﻿.vorurHeader{
-    display:flex;
-    justify-content:center;
-    font-size:4rem;
-}
-div[target=vorurMynd] img {
-    width: 400px;
-    height: 500px;
-}
-div[target=vorurLysing] {
-    margin-left: 20%;
-    margin-top: 4%;
-    margin-left: 12%;
-}
-p[target=voruverd] {
-    text-align:center;
-    font-size:3rem;
-}
-/*COPY er fyrir myndina, með modal virkni*/
-body {
-    font-family: Arial, Helvetica, sans-serif;
+﻿.all_content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 55vh;
 }
 
-    #myImg:hover {
-        opacity: 0.7;
-    }
+.product_name {
+    text-align:center;
+    font-weight:bold;
+    padding:2rem;
+}
+
+.product_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product_info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.product_info > ul{
+    padding: 0;
+}
+
+.product_price {
+    padding: 3rem 0;
+    list-style:none;
+    font-weight:bold;
+    font-size:1.8rem;
+}
+
+.product_img_wrapper {
+    width: 40%;
+}
+
+.product_img {
+    display:block;
+    width:100%;
+}
+
+.options_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img_option_wrapper {
+    width: 40%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px transparent solid;
+}
+
+.img_option_wrapper:hover {
+    border: 1px black solid;
+}
+
+.img_option {
+    display: block;
+    width: 100%;
+}
+
+/*COPY er fyrir myndina, með modal virkni*/
+#myImg:hover {
+    opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
@@ -100,16 +146,30 @@ body {
     transition: 0.3s;
 }
 
-    .close:hover,
-    .close:focus {
-        color: #bbb;
-        text-decoration: none;
-        cursor: pointer;
-    }
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
     .modal-content {
-        width: 100%;
+        width: 80%;
     }
+    .product_wrapper {
+        flex-direction:column;
+    }
+
+    .product_img_wrapper{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .product_info {
+        width: 80%;
+        margin: 0 auto;
+        text-align:center;
+    }
+
 }

@@ -2,53 +2,49 @@
 @{
     ViewBag.Title = "krakkarnir";
 }
-<head>
-    <link href="~/MyCss/krakkar.css" rel="stylesheet" type="text/css" />
-    <link href="~/MyCss/hjolin.css" rel="stylesheet" type="text/css" />
-    <link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
-</head>
 <html>
 <body>
-    <div class="container">
-        <div class="vorurnar_title"> Krakkarnir</div>
-        <div class="col-md-4" target="vara">
-            <a href="/vorur?@(Model.audkenin[0])">
-                <div class="voruContainer">
-                    <p class="voruFyrirsogn">@Model.nofn[0]</p>
-                    <img src="~/images/@(Model.myndir[0]).png" width="200" height="200" />
-                    <p class="price"> @Model.verdin[0] kr.</p>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4" target="vara">
-            <a href="/vorur?@(Model.audkenin[4])">
-                <div class="voruContainer">
-                    <p class="voruFyrirsogn">@Model.nofn[4]</p>
-                    <img src="~/images/@(Model.myndir[4]).png" width="200" height="200" />
-                    <p class="price"> @Model.verdin[4] kr.</p>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4" target="vara">
-            <a href="/vorur?@(Model.audkenin[5])">
-                <div class="voruContainer">
-                    <p class="voruFyrirsogn">@Model.nofn[5]</p>
-                    <img src="~/images/@(Model.myndir[5]).png" width="200" height="200" />
-                    <p class="price">@Model.verdin[5] kr.</p>
-                </div>
-            </a>
-        </div>
+    <div class="content_container_wrapper">
+        <div class="content_container">
+            <div class="content_grid_element">
+                <a href="/vorur?@(Model.audkenin[0])">
+                    <h3 class="content_grid_title">@Model.nofn[0]</h3>
+                    <div class="content_grid_img_wrapper">
+                        <img class="content_grid_img" src="~/images/@(Model.myndir[0]).png" />
+                    </div>
+                    <p class="content_grid_price"> @Model.verdin[0] kr.</p>
+                </a>
+            </div>
+            <div class="content_grid_element">
+                <a href="/vorur?@(Model.audkenin[4])">
+                    <h3 class="content_grid_title">@Model.nofn[4]</h3>
+                    <div class="content_grid_img_wrapper">
+                        <img class="content_grid_img" src="~/images/@(Model.myndir[4]).png" />
+                    </div>
+                    <p class="content_grid_price"> @Model.verdin[4] kr.</p>
+                </a>
+            </div>
+            <div class="content_grid_element">
+                <a href="/vorur?@(Model.audkenin[5])">
+                    <h3 class="content_grid_title">@Model.nofn[5]</h3>
+                    <div class="content_grid_img_wrapper">
+                        <img class="content_grid_img" src="~/images/@(Model.myndir[5]).png" />
+                    </div>
+                    <p class="content_grid_price"> @Model.verdin[5] kr.</p>
+                </a>
+            </div>
+            <div class="content_grid_element">
+                <a href="/vorur?@(Model.audkenin[7])">
+                    <h3 class="content_grid_title">@Model.nofn[7]</h3>
+                    <div class="content_grid_img_wrapper">
+                        <img class="content_grid_img" src="~/images/@(Model.myndir[7]).png" />
+                    </div>
+                    <p class="content_grid_price"> @Model.verdin[7] kr.</p>
+                </a>
+            </div>
 
-        <div class="col-md-4" target="vara">
-            <a href="/vorur?@(Model.audkenin[7])">
-                <div class="voruContainer">
-                    <p class="voruFyrirsogn">@Model.nofn[7]</p>
-                    <img src="~/images/@(Model.myndir[7]).png" width="200" height="200" />
-                    <p class="price">@Model.verdin[7] kr.</p>
-                </div>
-            </a>
         </div>
     </div>
-        
+
 </body>
 </html>
