@@ -10,27 +10,27 @@
 <html>
 <body>
     <div class="content_container_wrapper">
-        <div class="menu_container">         
-            <ul class="menu_list">
-                <a  class="menu_item menu_title" href="aukahlutir"><li>Aukahlutir</li></a>
-                <a  class="menu_item" href="aukahlutir/bjollur"><li>Bjöllur</li></a>
-                <a  class="menu_item" href="aukahlutir/bretti"><li>Bretti</li></a>
-                <a  class="menu_item" href="aukahlutir/bogglaberar"><li>Bögglaberar</li></a>
-                <a  class="menu_item" href="aukahlutir/hradamaelar"><li>Hraðamælar</li></a>
-                <a  class="menu_item" href="aukahlutir/pedalar"><li>Körfur</li></a>
-                <a  class="menu_item" href="aukahlutir/ljos"><li>Ljós</li></a>
-                <a  class="menu_item" href="aukahlutir/pumpur"><li>Pedalar</li></a>
-                <a  class="menu_item" href="aukahlutir/pumpur"><li>Pumpur</li></a>
-                <a  class="menu_item" href="aukahlutir/standarar"><li>Standarar</li></a>
-                <a  class="menu_item" href="aukahlutir/styrisendar"><li>Stýrisendar</li></a>
-                <a  class="menu_item" href="aukahlutir/vatnsfloskur_statif"><li>Vatnsflöskur og statíf</li></a>
-                <a  class="menu_item" href="aukahlutir/hnakkar"><li>Hnakkar</li></a>
-                <a  class="menu_item" href="aukahlutir/lasar"><li>Lásar</li></a>
-            </ul>
+        <div class="menu_container">
+            <div class="menu_list">
+                <a class="menu_item menu_title" href="/aukahlutir"><div>Aukahlutir</div></a>
+                <a class="menu_item" href="/aukahlutir/bjollur"><div>Bjöllur</div></a>
+                <a class="menu_item" href="/aukahlutir/bretti"><div>Bretti</div></a>
+                <a class="menu_item" href="/aukahlutir/bogglaberar"><div>Bögglaberar</div></a>
+                <a class="menu_item" href="/aukahlutir/hradamaelar"><div>Hraðamælar</div></a>
+                <a class="menu_item" href="/aukahlutir/pedalar"><div>Körfur</div></a>
+                <a class="menu_item" href="/aukahlutir/ljos"><div>Ljós</div></a>
+                <a class="menu_item" href="/aukahlutir/pumpur"><div>Pedalar</div></a>
+                <a class="menu_item" href="/aukahlutir/pumpur"><div>Pumpur</div></a>
+                <a class="menu_item" href="/aukahlutir/standarar"><div>Standarar</div></a>
+                <a class="menu_item" href="/aukahlutir/styrisendar"><div>Stýrisendar</div></a>
+                <a class="menu_item" href="/aukahlutir/vatnsfloskur_statif"><div>Vatnsflöskur og statíf</div></a>
+                <a class="menu_item" href="/aukahlutir/hnakkar"><div>Hnakkar</div></a>
+                <a class="menu_item" href="/aukahlutir/lasar"><div>Lásar</div></a>
+            </div>
         </div>
         <div class="content_container with_menu">
-            @{  
-              for (int count = 0; count < Model.maxer; count++)
+            @{
+                for (int count = 0; count < Model.maxer; count++)
                 {
                     <div class="content_grid_element">
                         <a href="/vorur?@(Model.audkenin[@count])">
