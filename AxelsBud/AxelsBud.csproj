@@ -173,6 +173,7 @@
     <Content Include="images\bjollur_frozen.png" />
     <Content Include="images\bjollur_planes.png" />
     <Content Include="images\bjollur_princess.png" />
+    <Content Include="images\black_hnakkur.PNG" />
     <Content Include="images\bogglaberar\bögglaberi_disc_large.png" />
     <Content Include="images\bogglaberar\bögglageri_deluxe.png" />
     <Content Include="images\bremsubunadur\bremsuarmar_v_bremsu_sett.png" />
@@ -212,7 +213,9 @@
     <Content Include="images\Hjol\bike_skye.png" />
     <Content Include="images\Hjol\bike_skyeS.png" />
     <Content Include="images\Hjol\bike_verve2_domu.png" />
+    <Content Include="images\Hjol\hjol_marlin_6_black.png" />
     <Content Include="images\hlaupahjol_original_street.png" />
+    <Content Include="images\hnakkar\black_hnakkur.PNG" />
     <Content Include="images\icons8-facebook.svg" />
     <Content Include="images\kedjur_girhlifar\girhlif_grind.png" />
     <Content Include="images\kedjur_girhlifar\girhlif_oxul.png" />

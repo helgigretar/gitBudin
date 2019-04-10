@@ -1,7 +1,10 @@
-﻿{
-  "Name": "shopper comfort",
-  "verd": "12.990",
-  "mynd": "korfur/shopper_comfort",
-  "lysing": "Taukarfa sem leggst vel saman þegar hún er ekki í notkun $ 38*25*29sm (24l) $ Hámark 7 kg í körfuna $ Regnhlíf og festing fylgir",
-  "ID": "hnakkar_1"
-}
+﻿[
+  {
+    "Name": "Þægilegur hnakkur",
+    "verd": "3.790",
+    "mynd": "hnakkar/black_hnakkur",
+    "lysing": "Mjög mjúkur og þægilegur hnakkur $ passar á flest hjól",
+    "ID": "hnakkur_0"
+
+  }
+]

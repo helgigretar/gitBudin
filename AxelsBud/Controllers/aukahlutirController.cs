@@ -223,7 +223,7 @@ namespace AxelsBud.Controllers
         public ActionResult hnakkar()
         {
             counter = 0;
-            //LoadJson("hnakkar");
+            LoadJson("hnakkar");
             var results = new bjollur()
             {
                 lysingar = lysing,

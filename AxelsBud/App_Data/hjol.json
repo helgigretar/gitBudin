@@ -4,8 +4,8 @@
     "verd": "84.990",
     "mynd": "hjol/bike_verve2_domu",
     "lysing": "Alpha Gold álstell, Dup Trap S möguleiki $ Bontrager AT-750 tvöfaldar gerðir $ 24 gírar $ Shimano Altus afturskiptir $ Fjöðrun á hnakkpípu $ Bontrager H5 dekk, 700X45",
-    "ID": "hjol_0",
-    "group": "1"
+    "ID": "hjol_1",
+    "group": "0"
   },
   {
     "Name": "Verve 2 Svart dömu M/19'' ",
@@ -110,6 +110,15 @@
     "lysing": "Konu Alpha Silver álstell $ 21 gír $ Shimano Tourney afturskiptir $ RST Gila dempari að framan 100 mm (80mm á 13.5'') $ Vökvadiskabremsur $ Bontrager XR2 dekk, 29*2.2 að framan og 29*2.0 að aftan $ Dekkjastærð: 13.5'' & 15.5'' : 27,5''/17,5'' og stærra: 29'' $ Þyngd: 13,6 kg(15,5)",
     "ID": "hjol_13",
     "group": "4"
-  }
+  },
+  {
+    "Name": "Marlin 6 2019",
+    "verd": "94.990",
+    "mynd": "hjol/hjol_marlin_6_black",
+    "lysing": "Alpha Silver álstell $ Dempari að framan, 100 mm með vökvalæsingu $ Tvöfaldar gjarðir $ Suntour XCT30, 100mm demparagafall, með vökvalæsingu $ Shimano Tourney Ty-501 sveifasett $ 24 gírar $ vökvadiskabremsur $ Uppfærsla frá TREK Marlin 5 $ Shimano Altus gírbúnaður ",
+    "ID": "hjol_14",
+    "group": "5"
+  },
+
 
 ]

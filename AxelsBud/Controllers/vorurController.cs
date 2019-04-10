@@ -120,7 +120,7 @@ namespace AxelsBud.Controllers
             LoadJson("girskiptar", vara);
             LoadJson("bremsubunadur", vara);
             LoadJson("kertastjakar", vara);
-            //LoadJson("hnakkar", vara);
+            LoadJson("hnakkar", vara);
             LoadJson("krakkar", vara);
            
             var result = new vorur()
