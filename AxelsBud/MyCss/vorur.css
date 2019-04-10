@@ -66,6 +66,16 @@
     width: 100%;
 }
 
+
+.dropdown_bike {
+    width: 100%;
+}
+
+.dropdown_bike:hover a {
+    color: black;
+    border: none;
+}
+
 /*COPY er fyrir myndina, með modal virkni*/
 #myImg:hover {
     opacity: 0.7;

@@ -6,9 +6,6 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="~/MyCss/hjolin.css" rel="stylesheet" type="text/css" />
-    <link href="~/MyCss/frontPage.css" rel="stylesheet" type="text/css" />
     <link href="~/MyCss/vorur.css" rel="stylesheet" type="text/css" />
     @* test *@
     <link rel="stylesheet" type="text/css" href="themes/easydropdown.css" />
@@ -17,15 +14,32 @@
 <body>
 
     <!-- Fyrsta myndin Þetta er flipi á reiðhjólasíðuna-->
-    <div class="headerBreaker"></div>
-    <div class="container">
-        <div class="vorurHeader">@Model.nafn</div>
-        <div class="row">
-            <div class="col-md-5" target="vorurMynd">
-                <img id="myImg" src="~/images/@(Model.mynd).png" alt="@Model.nafn" />
-                <p class="price" target="voruverd"> @Model.verd kr.</p>
+    <div class="all_content">
+        <h3 class="product_name">@Model.nafn</h3>
+        <div class="dropdown nav_button dropdown_bike">
+            <a class="">Undirflokkar</a>
+            <div class="dropdown_content">
+                @{
+                    for (int i = 0; i < Model.extraNames.Length; i++)
+                    {
+                        if (Model.extraPrices[i] != null)
+                        {
+                            <a href="/hjol?@Model.extraLinks[i]">
+                                <p>@Model.extraNames[i]</p>
+                                <b>@Model.extraPrices[i]</b>
+                            </a>
+
+                        }
+                    }
+                }
             </div>
-            <div class="col-md-4" target="vorurLysing">                
+        </div>
+        <div class="product_wrapper">
+            <div class="product_img_wrapper">
+                <img class="product_img" id="myImg" src="~/images/@(Model.mynd).png" alt="@Model.nafn" />
+            </div>
+            <div class="product_info">
+
                 <h3>Nánari lýsing</h3>
                 <ul>
                     @{
@@ -37,28 +51,11 @@
                             }
                         }
                     }
+                    <li class="product_price" target="voruverd"> @Model.verd kr.</li>
                 </ul>
-                <div class="dropdown nav_button">
-                    <a class="">Undirflokkar</a>
-                    <div class="dropdown_content">
-                        @{ 
-                            for(int i = 0; i < Model.extraNames.Length; i++)
-                            {
-                                if(Model.extraPrices[i] != null)
-                                {
-                                    <a href="/hjol?@Model.extraLinks[i]">
-                                        <p>@Model.extraNames[i]</p>
-                                        <b>@Model.extraPrices[i]</b>
-                                    </a>
 
-                                }
-                            }
-                        }
-                    </div>
-                </div>
             </div>
         </div>
-        <div class="breaker"></div>
     </div>
 
     <!-- The Modal -->
