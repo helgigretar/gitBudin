@@ -1,31 +1,44 @@
 ﻿[
   {
+    "Name": "Bjöllur með disney þema",
+    "verd": "1.290",
+    "mynd": "krakkar/bjollur",
+    "lysing": "Bjöllur með Cars myndum framan á $ Bjöllur sem hringja $ Hægt að velja í ýmsum litum",
+    "ID": "krakkar_1",
+    "group": "0"
+  },
+  {
     "Name": "Bjöllur með Cars",
     "verd": "1.290",
     "mynd": "krakkar/bjollur",
     "lysing": "Bjöllur með Cars myndum framan á $ Bjöllur sem hringja $ Hægt að velja í ýmsum litum",
-    "ID": "krakkar_1"
+    "ID": "krakkar_1",
+    "group": "1"
   },
+
   {
     "Name": "Bjöllur með Frozen",
     "verd": "1.290",
     "mynd": "krakkar/bjollur_frozen",
     "lysing": "Bjöllur með Frozen myndum framan á $ Bjöllur sem hringja $ Hægt að velja í ýmsum litum",
-    "ID": "krakkar_2"
+    "ID": "krakkar_2",
+    "group": "1"
   },
   {
     "Name": "Bjöllur með Planes",
     "verd": "1.290",
     "mynd": "krakkar/bjollur_planes",
     "lysing": "Bjöllur með planes myndum framan á $ Bjöllur sem hringja $ Hægt að velja í ýmsum litum",
-    "ID": "krakkar_3"
+    "ID": "krakkar_3",
+    "group": "1"
   },
   {
     "Name": "Bjöllur með Princess",
     "verd": "1.290",
     "mynd": "krakkar/bjollur_princess",
     "lysing": "Bjöllur með princess myndum framan á $ Bjöllur sem hringja $ Hægt að velja í ýmsum litum",
-    "ID": "krakkar_4"
+    "ID": "krakkar_4",
+    "group": "1"
   },
   {
     "Name": "Hjálpardekk 12-20 tommu",
@@ -34,19 +47,30 @@
     "lysing": "Hjálpardekk fyrir 12-20 tommu barnahjól $ Passa á flest hjól",
     "ID": "krakkar_5"
   },
+
+  {
+    "Name": "Körfur með disney þema",
+    "verd": "1.990",
+    "mynd": "krakkar/korfur_frozen",
+    "lysing": "Plastkarfa með festingum $ Hægt að velja í ýmsum litum",
+    "ID": "krakkar_6",
+    "group": "0"
+  },
   {
     "Name": "Körfur með Frozen",
     "verd": "1.990",
     "mynd": "krakkar/korfur_frozen",
     "lysing": "Plastkarfa með festingum $ Hægt að velja í ýmsum litum",
-    "ID": "krakkar_6"
+    "ID": "krakkar_6",
+    "group": "3"
   },
   {
     "Name": "Körfur með Princess",
     "verd": "1.990",
     "mynd": "krakkar/korfur_princess",
     "lysing": "Plastkarfa með festingum $ Hægt að velja í ýmsum litum",
-    "ID": "krakkar_7"
+    "ID": "krakkar_7",
+    "group": "3"
   },
   {
     "Name": "Hlaupahjól",
